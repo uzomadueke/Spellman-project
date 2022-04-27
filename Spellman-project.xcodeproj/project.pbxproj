@@ -102,9 +102,9 @@
 				A07897832819A10A00561AD8 /* AppDelegate.swift */,
 				A07897852819A10A00561AD8 /* SceneDelegate.swift */,
 				A07897872819A10A00561AD8 /* ViewController.swift */,
+				A078978E2819A10E00561AD8 /* LaunchScreen.storyboard */,
 				A07897892819A10B00561AD8 /* Main.storyboard */,
 				A078978C2819A10E00561AD8 /* Assets.xcassets */,
-				A078978E2819A10E00561AD8 /* LaunchScreen.storyboard */,
 				A07897912819A10E00561AD8 /* Info.plist */,
 			);
 			path = "Spellman-project";
