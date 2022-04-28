@@ -8,6 +8,8 @@
 import UIKit
 
 class LeaderboardViewController: UIViewController {
+    
+    @IBOutlet weak var totalScoreLabel: UILabel!  // for keeping track of score
 
     override func viewDidLoad() {
         super.viewDidLoad()

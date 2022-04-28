@@ -16,53 +16,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-us-fkb">
-                                <rect key="frame" x="104" y="526" width="206" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Go to other controller">
-                                    <color key="titleColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="filled" title="PLAY GAME" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
-                                    <color key="baseForegroundColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wz-cR-PdY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-4p-EDH">
-                                <rect key="frame" x="104" y="643" width="206" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Go to other controller">
-                                    <color key="titleColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="filled" title="LEADERBOARD" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybS-TT-aJ3"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPELLMAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1R-sE-3P4">
-                                <rect key="frame" x="76" y="354" width="262" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="cRt-cg-cQX" userLabel="Game Logo">
+                                <rect key="frame" x="125" y="83.5" width="164" height="123.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPELLMAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1R-sE-3P4" userLabel="Game Title">
+                                <rect key="frame" x="78.5" y="260" width="257" height="58.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="cRt-cg-cQX">
-                                <rect key="frame" x="125" y="138" width="164" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="iLf-uj-PlV">
+                                <rect key="frame" x="107" y="397" width="200" height="363"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-us-fkb" userLabel="Play Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3gG-8o-8M0"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Go to other controller">
+                                            <color key="titleColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="PLAY GAME" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                            <color key="baseForegroundColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wz-cR-PdY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-4p-EDH" userLabel="Leaderboard Button">
+                                        <rect key="frame" x="0.0" y="101" width="200" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="opc-Le-ru3"/>
+                                            <constraint firstAttribute="height" constant="60" id="xrB-rl-Mtq"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Go to other controller">
+                                            <color key="titleColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="HOW TO PLAY" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ8-ME-sFY" userLabel="Leaderboard Button">
+                                        <rect key="frame" x="0.0" y="202" width="200" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="T8p-cR-mSH"/>
+                                            <constraint firstAttribute="width" constant="200" id="vVI-IP-Eij"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Go to other controller">
+                                            <color key="titleColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="LEADERBOARD" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-sh-URR" userLabel="Leaderboard Button">
+                                        <rect key="frame" x="0.0" y="303" width="200" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2Rs-Yq-u2i"/>
+                                            <constraint firstAttribute="width" constant="200" id="mEa-ua-rni"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Go to other controller">
+                                            <color key="titleColor" red="0.97713987950000003" green="1" blue="0.96499382369999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="filled" title="SETTINGS" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.36078431370000003" green="0.61568627450000002" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iLf-uj-PlV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130.5" id="5F6-4U-WHQ"/>
+                            <constraint firstItem="iLf-uj-PlV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8m7-Cj-YSE"/>
+                            <constraint firstItem="J1R-sE-3P4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-159" id="9nz-yF-dJE"/>
+                            <constraint firstItem="cRt-cg-cQX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-303" id="QcE-xT-Vkm"/>
+                            <constraint firstItem="J1R-sE-3P4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rud-cO-6FO"/>
+                            <constraint firstItem="cRt-cg-cQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UIg-8m-lkK"/>
+                            <constraint firstItem="cRt-cg-cQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNK-uM-b5a"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameLogo" destination="cRt-cg-cQX" id="NY9-VV-vzy"/>
+                        <outlet property="gameTitle" destination="J1R-sE-3P4" id="KjZ-Mj-rZr"/>
+                        <outlet property="howToPlayButton" destination="tAX-4p-EDH" id="oR2-pf-0hi"/>
+                        <outlet property="leaderboardButton" destination="dQ8-ME-sFY" id="M9T-8b-yYO"/>
+                        <outlet property="playButton" destination="ck6-us-fkb" id="aKi-XI-6bQ"/>
+                        <outlet property="settingsButton" destination="pKa-sh-URR" id="r5L-Yc-2Y0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

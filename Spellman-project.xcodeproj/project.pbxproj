@@ -19,6 +19,8 @@
 		A07897B5281A0B9700561AD8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897B4281A0B9700561AD8 /* GameViewController.swift */; };
 		A07897B7281A1F5800561AD8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897B6281A1F5800561AD8 /* SettingsViewController.swift */; };
 		A07897B9281A1F9100561AD8 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */; };
+		A07897BE281A361200561AD8 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897BD281A361200561AD8 /* ViewExtensions.swift */; };
+		A07897C1281A4F4000561AD8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897C0281A4F4000561AD8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A07897B4281A0B9700561AD8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A07897B6281A1F5800561AD8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		A07897BD281A361200561AD8 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		A07897C0281A4F4000561AD8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +109,15 @@
 		A07897822819A10A00561AD8 /* Spellman-project */ = {
 			isa = PBXGroup;
 			children = (
-				A07897832819A10A00561AD8 /* AppDelegate.swift */,
-				A07897852819A10A00561AD8 /* SceneDelegate.swift */,
 				A07897872819A10A00561AD8 /* WelcomeViewController.swift */,
 				A07897B6281A1F5800561AD8 /* SettingsViewController.swift */,
 				A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */,
 				A07897B4281A0B9700561AD8 /* GameViewController.swift */,
 				A078978E2819A10E00561AD8 /* LaunchScreen.storyboard */,
 				A07897892819A10B00561AD8 /* Main.storyboard */,
+				A07897BF281A4EE300561AD8 /* Extras */,
+				A07897BC281A348D00561AD8 /* Extensions */,
+				A07897BB281A25D700561AD8 /* Delegation */,
 				A078978C2819A10E00561AD8 /* Assets.xcassets */,
 				A07897912819A10E00561AD8 /* Info.plist */,
 			);
@@ -134,6 +139,31 @@
 				A07897A62819A10E00561AD8 /* Spellman_projectUITestsLaunchTests.swift */,
 			);
 			path = "Spellman-projectUITests";
+			sourceTree = "<group>";
+		};
+		A07897BB281A25D700561AD8 /* Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				A07897852819A10A00561AD8 /* SceneDelegate.swift */,
+				A07897832819A10A00561AD8 /* AppDelegate.swift */,
+			);
+			path = Delegation;
+			sourceTree = "<group>";
+		};
+		A07897BC281A348D00561AD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A07897BD281A361200561AD8 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A07897BF281A4EE300561AD8 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				A07897C0281A4F4000561AD8 /* Constants.swift */,
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,11 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07897B5281A0B9700561AD8 /* GameViewController.swift in Sources */,
+				A07897BE281A361200561AD8 /* ViewExtensions.swift in Sources */,
 				A07897882819A10A00561AD8 /* WelcomeViewController.swift in Sources */,
 				A07897842819A10A00561AD8 /* AppDelegate.swift in Sources */,
 				A07897B7281A1F5800561AD8 /* SettingsViewController.swift in Sources */,
 				A07897B9281A1F9100561AD8 /* LeaderboardViewController.swift in Sources */,
 				A07897862819A10A00561AD8 /* SceneDelegate.swift in Sources */,
+				A07897C1281A4F4000561AD8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
