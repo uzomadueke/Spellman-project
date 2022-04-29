@@ -239,14 +239,58 @@
                     <view key="view" contentMode="scaleToFill" id="1iQ-Rd-sap">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="126" translatesAutoresizingMaskIntoConstraints="NO" id="7Ff-Q4-wyN">
+                                <rect key="frame" x="61.5" y="182" width="291" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOUND FX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e7-Y0-MiL" userLabel="SoundFX Tag">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="31"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-qm-QJQ" userLabel="SoundFX Controller">
+                                        <rect key="frame" x="242" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="173" translatesAutoresizingMaskIntoConstraints="NO" id="a7Y-kG-QbZ">
+                                <rect key="frame" x="62" y="272" width="292.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M2-CM-oGs" userLabel="Music Tag">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wte-oV-IpE" userLabel="Music Controller">
+                                        <rect key="frame" x="243.5" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="B4C-Dr-Lj8"/>
-                        <color key="backgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.19135099650000001" green="0.19138363" blue="0.19134074449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Ff-Q4-wyN" firstAttribute="centerX" secondItem="1iQ-Rd-sap" secondAttribute="centerX" id="1fO-dn-6cN"/>
+                            <constraint firstItem="7Ff-Q4-wyN" firstAttribute="centerY" secondItem="1iQ-Rd-sap" secondAttribute="centerY" constant="-250.5" id="3C5-2x-p4P"/>
+                            <constraint firstItem="a7Y-kG-QbZ" firstAttribute="centerY" secondItem="1iQ-Rd-sap" secondAttribute="centerY" constant="-160.5" id="NUY-ja-w8e"/>
+                            <constraint firstItem="a7Y-kG-QbZ" firstAttribute="centerX" secondItem="1iQ-Rd-sap" secondAttribute="centerX" constant="1.25" id="qbj-ix-fXc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SETTINGS" id="Ha5-Rl-YkA"/>
+                    <connections>
+                        <outlet property="musicController" destination="wte-oV-IpE" id="h54-wl-KcK"/>
+                        <outlet property="musicTag" destination="3M2-CM-oGs" id="H3s-TA-wU6"/>
+                        <outlet property="soundFXController" destination="RAx-qm-QJQ" id="6t0-7I-j1p"/>
+                        <outlet property="soundFXTag" destination="4e7-Y0-MiL" id="0G5-bQ-FcJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGZ-Xw-VoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="840"/>
+            <point key="canvasLocation" x="1179.7101449275362" y="839.73214285714278"/>
         </scene>
     </scenes>
     <resources>

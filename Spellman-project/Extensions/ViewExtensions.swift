@@ -79,6 +79,7 @@ extension UIButton {
         pulsation.initialVelocity = 0.5 //0.5
         pulsation.damping = 1.0
         layer.add(pulsation, forKey: nil)
+        
     }
     
     // Flash animation

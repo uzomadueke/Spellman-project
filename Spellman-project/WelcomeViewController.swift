@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import AVFoundation
+import GameKit
+import StoreKit
 
 class WelcomeViewController: UIViewController {
     
@@ -17,7 +20,11 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var leaderboardButton: UIButton!
     @IBOutlet weak var howToPlayButton: UIButton!
     
+    var player: AVAudioPlayer?
+    let defaults = UserDefaults.standard
     var buttonClicked = false
+    var soundFXOn = true
+    var musicOn = true
     
     
     
