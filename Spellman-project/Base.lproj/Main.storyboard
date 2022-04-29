@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQR-W7-qaX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,6 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YTC-Ts-RU6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bQR-W7-qaX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="zKH-it-2ou">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h7Y-AP-SNj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JuY-h9-6Ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="100"/>
+        </scene>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -26,10 +48,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="iLf-uj-PlV">
-                                <rect key="frame" x="107" y="397" width="200" height="363"/>
+                                <rect key="frame" x="116.5" y="397" width="181" height="363"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-us-fkb" userLabel="Play Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="3gG-8o-8M0"/>
                                         </constraints>
@@ -43,13 +65,14 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wz-cR-PdY"/>
+                                            <action selector="playButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="c00-gz-F1O"/>
+                                            <segue destination="hMH-Fu-ewU" kind="show" id="fs2-gI-ZVq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-4p-EDH" userLabel="Leaderboard Button">
-                                        <rect key="frame" x="0.0" y="101" width="200" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-4p-EDH" userLabel="How To Play Button">
+                                        <rect key="frame" x="0.0" y="101" width="181" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="opc-Le-ru3"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="opc-Le-ru3"/>
                                             <constraint firstAttribute="height" constant="60" id="xrB-rl-Mtq"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -61,12 +84,15 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="nLN-dv-Nli" kind="show" id="0si-H6-yEm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ8-ME-sFY" userLabel="Leaderboard Button">
-                                        <rect key="frame" x="0.0" y="202" width="200" height="60"/>
+                                        <rect key="frame" x="0.0" y="202" width="181" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="T8p-cR-mSH"/>
-                                            <constraint firstAttribute="width" constant="200" id="vVI-IP-Eij"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="vVI-IP-Eij"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Go to other controller">
@@ -77,12 +103,15 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="rht-RU-YVr" kind="show" id="HCh-xw-t4i"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-sh-URR" userLabel="Leaderboard Button">
-                                        <rect key="frame" x="0.0" y="303" width="200" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-sh-URR" userLabel="Settings Button">
+                                        <rect key="frame" x="0.0" y="303" width="181" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="2Rs-Yq-u2i"/>
-                                            <constraint firstAttribute="width" constant="200" id="mEa-ua-rni"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="mEa-ua-rni"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Go to other controller">
@@ -93,6 +122,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="U28-DE-1ly" kind="show" id="7eI-vO-AIq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -109,6 +141,7 @@
                             <constraint firstItem="cRt-cg-cQX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNK-uM-b5a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9Dc-ln-QcZ"/>
                     <connections>
                         <outlet property="gameLogo" destination="cRt-cg-cQX" id="NY9-VV-vzy"/>
                         <outlet property="gameTitle" destination="J1R-sE-3P4" id="KjZ-Mj-rZr"/>
@@ -120,9 +153,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>
+            <point key="canvasLocation" x="1180" y="100"/>
         </scene>
-        <!--Game View Controller-->
+        <!--SPELLMAN-->
         <scene sceneID="eYL-M9-RiL">
             <objects>
                 <viewController storyboardIdentifier="gamepage" id="hMH-Fu-ewU" customClass="GameViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,19 +170,65 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gv4-Pa-uzJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="SPELLMAN" id="cc5-e4-7a4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D67-7R-yWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872" y="111"/>
+            <point key="canvasLocation" x="3445" y="69"/>
+        </scene>
+        <!--HOW TO PLAY-->
+        <scene sceneID="Ero-ZW-bbz">
+            <objects>
+                <viewController id="nLN-dv-Nli" customClass="HowToPlayViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9T-4o-7Pb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2Ne-8E-3cf"/>
+                        <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOW TO PLAY" id="to7-5J-rAj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktd-HD-WY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2167" y="-328"/>
+        </scene>
+        <!--LEADERBOARD-->
+        <scene sceneID="qMW-yH-FsS">
+            <objects>
+                <viewController id="rht-RU-YVr" customClass="LeaderboardViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="POX-Qa-hv1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OGs-5e-WZA"/>
+                        <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LEADERBOARD" id="Foo-ec-9Hv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIL-HJ-Q8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2167" y="495"/>
+        </scene>
+        <!--SETTINGS-->
+        <scene sceneID="KWv-JT-gTw">
+            <objects>
+                <viewController id="U28-DE-1ly" customClass="SettingsViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1iQ-Rd-sap">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="B4C-Dr-Lj8"/>
+                        <color key="backgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SETTINGS" id="Ha5-Rl-YkA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGZ-Xw-VoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="840"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo2" width="164" height="123.5"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

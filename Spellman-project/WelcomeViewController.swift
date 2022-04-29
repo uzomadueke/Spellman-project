@@ -19,16 +19,16 @@ class WelcomeViewController: UIViewController {
     
     
     
-
+    //This is for loading the homescreen
     override func viewDidLoad() {
         super.viewDidLoad()
-       // view.backgroundColor = .link  ...for console colour to be blue
         
         // this is for animating the buttons on the welcome screen
         animateViewController()
     }
     
-    @IBAction func didTapButton(){
+    
+    @IBAction func playButtonClicked(){
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "gamepage") as? GameViewController else {
             print("failed to get vc from storyboard")
             return
