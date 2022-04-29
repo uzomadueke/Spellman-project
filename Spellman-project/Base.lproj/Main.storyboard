@@ -11,15 +11,34 @@
         <!--Navigation Controller-->
         <scene sceneID="YTC-Ts-RU6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bQR-W7-qaX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="dark" id="bQR-W7-qaX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="zKH-it-2ou">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance" backgroundEffect="systemUltraThinMaterial">
+                            <color key="backgroundColor" red="0.21099463025552417" green="0.21063872881802029" blue="0.21685544043472149" alpha="0.13679286411830358" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </textAttributes>
+                            <barButtonItemAppearance key="backButtonAppearance">
+                                <barButtonItemStateAppearance key="normal">
+                                    <textAttributes key="titleTextAttributes">
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </textAttributes>
+                                </barButtonItemStateAppearance>
+                                <barButtonItemStateAppearance key="highlighted"/>
+                                <barButtonItemStateAppearance key="disabled"/>
+                                <barButtonItemStateAppearance key="focused"/>
+                            </barButtonItemAppearance>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -65,8 +84,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="playButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="c00-gz-F1O"/>
-                                            <segue destination="hMH-Fu-ewU" kind="show" id="fs2-gI-ZVq"/>
+                                            <action selector="playButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2q-ic-LVv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-4p-EDH" userLabel="How To Play Button">
@@ -85,7 +103,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="nLN-dv-Nli" kind="show" id="0si-H6-yEm"/>
+                                            <action selector="howToPlayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wb-Q8-4eY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ8-ME-sFY" userLabel="Leaderboard Button">
@@ -104,7 +122,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="rht-RU-YVr" kind="show" id="HCh-xw-t4i"/>
+                                            <action selector="leaderboardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hE5-Oz-A5b"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKa-sh-URR" userLabel="Settings Button">
@@ -123,14 +141,14 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="U28-DE-1ly" kind="show" id="7eI-vO-AIq"/>
+                                            <action selector="settingsButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqR-Jt-fW9"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.36078431370000003" green="0.61568627450000002" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iLf-uj-PlV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130.5" id="5F6-4U-WHQ"/>
                             <constraint firstItem="iLf-uj-PlV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8m7-Cj-YSE"/>
@@ -149,6 +167,10 @@
                         <outlet property="leaderboardButton" destination="dQ8-ME-sFY" id="M9T-8b-yYO"/>
                         <outlet property="playButton" destination="ck6-us-fkb" id="aKi-XI-6bQ"/>
                         <outlet property="settingsButton" destination="pKa-sh-URR" id="r5L-Yc-2Y0"/>
+                        <segue destination="hMH-Fu-ewU" kind="show" identifier="goToGame" id="5JQ-1c-rQ5"/>
+                        <segue destination="nLN-dv-Nli" kind="show" identifier="goToHowToPlay" id="uCX-qp-qaI"/>
+                        <segue destination="rht-RU-YVr" kind="show" identifier="goToLeaderboard" id="ZRb-xu-iH5"/>
+                        <segue destination="U28-DE-1ly" kind="show" identifier="goToSettings" id="z66-77-eZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,7 +180,7 @@
         <!--SPELLMAN-->
         <scene sceneID="eYL-M9-RiL">
             <objects>
-                <viewController storyboardIdentifier="gamepage" id="hMH-Fu-ewU" customClass="GameViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SPELLMAN" id="hMH-Fu-ewU" customClass="GameViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ciE-AL-Xmb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D67-7R-yWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3445" y="69"/>
+            <point key="canvasLocation" x="3454" y="100"/>
         </scene>
         <!--HOW TO PLAY-->
         <scene sceneID="Ero-ZW-bbz">

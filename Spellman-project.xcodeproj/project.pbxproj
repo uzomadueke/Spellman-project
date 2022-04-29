@@ -67,11 +67,11 @@
 		A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		A07897BD281A361200561AD8 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		A07897C0281A4F4000561AD8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A0F539EF281B6933003CD210 /* backgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundmusic.mp3; sourceTree = "<group>"; };
-		A0F539F1281B693D003CD210 /* game-won.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "game-won.wav"; sourceTree = "<group>"; };
-		A0F539F3281B694C003CD210 /* correct-answer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-answer.wav"; sourceTree = "<group>"; };
-		A0F539F5281B6959003CD210 /* wrong-answer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wrong-answer.wav"; sourceTree = "<group>"; };
-		A0F539F7281B695F003CD210 /* button-pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "button-pressed.wav"; sourceTree = "<group>"; };
+		A0F539EF281B6933003CD210 /* backgroundmusic.mp3 */ = {isa = PBXFileReference; explicitFileType = audio.mp3; path = backgroundmusic.mp3; sourceTree = "<group>"; };
+		A0F539F1281B693D003CD210 /* game-won.wav */ = {isa = PBXFileReference; explicitFileType = audio.wav; path = "game-won.wav"; sourceTree = "<group>"; };
+		A0F539F3281B694C003CD210 /* correct-answer.wav */ = {isa = PBXFileReference; explicitFileType = audio.wav; path = "correct-answer.wav"; sourceTree = "<group>"; };
+		A0F539F5281B6959003CD210 /* wrong-answer.wav */ = {isa = PBXFileReference; explicitFileType = audio.wav; path = "wrong-answer.wav"; sourceTree = "<group>"; };
+		A0F539F7281B695F003CD210 /* button-pressed.wav */ = {isa = PBXFileReference; explicitFileType = audio.wav; path = "button-pressed.wav"; sourceTree = "<group>"; };
 		A0F539F9281B7093003CD210 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

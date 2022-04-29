@@ -190,7 +190,7 @@ extension UITableView {
 }
 
 //MARK: - UIAlertController Extension
-/*
+
 extension UIAlertController {
     
     func formatUI(){
@@ -204,7 +204,7 @@ extension UIAlertController {
     }
   
     
-}*/
+}
 
 
     /*

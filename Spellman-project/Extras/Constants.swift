@@ -10,7 +10,7 @@ import Foundation
 struct K {
     
     // VC Titles
-    static let appName = "Hangman"
+    static let appName = "Spellman"
     static let settingsVCName = "Settings ⚙️"
     static let howTopPlayVCName = "How To Play 🕹"
     
@@ -21,6 +21,7 @@ struct K {
     static let gameSeugue = "goToGame"
     static let howToPlaySegue = "goToHowToPlay"
     static let settingsSegue = "goToSettings"
+    static let leaderboardSegue = "goToLeaderboard"
     
     // Score
     static let scoreKey = "TotalScore"
