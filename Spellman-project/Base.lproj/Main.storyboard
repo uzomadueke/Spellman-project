@@ -252,6 +252,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-qm-QJQ" userLabel="SoundFX Controller">
                                         <rect key="frame" x="242" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="soundFXTag:" destination="U28-DE-1ly" eventType="valueChanged" id="3fO-ne-kmf"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -267,6 +270,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wte-oV-IpE" userLabel="Music Controller">
                                         <rect key="frame" x="243.5" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="musicTag:" destination="U28-DE-1ly" eventType="valueChanged" id="TuV-Oi-wQP"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>

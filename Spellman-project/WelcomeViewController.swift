@@ -35,6 +35,13 @@ class WelcomeViewController: UIViewController {
         setNeedsStatusBarAppearanceUpdate()
         
         buttonClicked = false
+        
+        // for soundFX in homescreen
+        if let soundFXStatus = defaults.bool(forKey: K.scoreKey) as? Bool {
+            soundFXOn = soundFXStatus
+        } else {
+            soundFXOn = true
+        }
     }
     
     
@@ -43,7 +50,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the  line below if you want to play Background music
-        //MusicPlayer.sharedHelper.playBGMusic()
+        MusicPlayer.sharedHelper.playBGMusic()
         
         animateViewController()
     }
@@ -61,7 +68,7 @@ class WelcomeViewController: UIViewController {
     
     // This opens up the game page when the "play game" button is clicke.d
     @IBAction func playButtonClicked(_ sender: UIButton){
-        //playButtonSound()
+        playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
         
         Vibration.light.vibrate()  //adds vibration feature
@@ -80,6 +87,7 @@ class WelcomeViewController: UIViewController {
     
     // This opens up the how to play page when the "how to play" button is clicked.
     @IBAction func howToPlayButtonClicked(_ sender: UIButton){
+        playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
         
         Vibration.light.vibrate()  //adds vibration feature
@@ -98,6 +106,7 @@ class WelcomeViewController: UIViewController {
     
     // This opens up the leaderboard page when the "leaderboard" button is clicked.
     @IBAction func leaderboardButtonClicked(_ sender: UIButton){
+        playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
         
         Vibration.light.vibrate()  //adds vibration feature
@@ -116,6 +125,7 @@ class WelcomeViewController: UIViewController {
     
     // This opens up the settings page when the "settings" button is clicked.
     @IBAction func settingsButtonClicked(_ sender: UIButton){
+        playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
         
         Vibration.light.vibrate()  //adds vibration feature
@@ -134,14 +144,17 @@ class WelcomeViewController: UIViewController {
     
     
     
-    
+    // This function is for plying a sound when a button is clicked.
+    func playButtonSound() {
+     MusicPlayer.sharedHelper.playSound(soundURL: K.Audio.buttonPressedSound)
+     }
     
     
     
     // This animates the Home screen as it launches, (buttons, text and logo included).
     private func animateViewController() {
         gameLogo.animateImg(duration: 2.0)
-        gameTitle.typingTextAnimation(text: K.appName.uppercased(), timeInterval: 0.2)
+        gameTitle.typingTextAnimation(text: K.appName.uppercased(), timeInterval: 0.1)
         playButton.fadeInBtn(duration: 1.0)
         settingsButton.fadeInBtn(duration: 1.0)
         leaderboardButton.fadeInBtn(duration: 1.0)
