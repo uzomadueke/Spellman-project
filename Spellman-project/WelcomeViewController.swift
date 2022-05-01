@@ -20,6 +20,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var leaderboardButton: UIButton!
     @IBOutlet weak var howToPlayButton: UIButton!
     
+    
     var player: AVAudioPlayer?
     let defaults = UserDefaults.standard
     var buttonClicked = false
@@ -37,10 +38,10 @@ class WelcomeViewController: UIViewController {
         buttonClicked = false
         
         // for soundFX in homescreen
-        if let soundFXStatus = defaults.bool(forKey: K.scoreKey) as? Bool {
+        if let soundFXStatus = defaults.bool(forKey: K.Audio.fxSoundKey) as? Bool {
             soundFXOn = soundFXStatus
         } else {
-            soundFXOn = true
+            soundFXOn = false //
         }
     }
     
@@ -50,7 +51,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the  line below if you want to play Background music
-        MusicPlayer.sharedHelper.playBGMusic()
+       // MusicPlayer.sharedHelper.playBGMusic()
         
         animateViewController()
     }

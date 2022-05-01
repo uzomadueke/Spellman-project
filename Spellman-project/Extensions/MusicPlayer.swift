@@ -33,7 +33,7 @@ class MusicPlayer {
                 audioPlayer?.volume = volume
                 print("playing music")
             } catch {
-                print("Issue playing file")
+                print("Issue playing music file")
             }
         } else {
             audioPlayer?.stop()

@@ -103,7 +103,7 @@
                                             <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="howToPlayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Wb-Q8-4eY"/>
+                                            <action selector="howToPlayButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="spS-VQ-9x1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ8-ME-sFY" userLabel="Leaderboard Button">
@@ -161,16 +161,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="9Dc-ln-QcZ"/>
                     <connections>
+                        <outlet property="HowToPlayButton" destination="tAX-4p-EDH" id="yGC-wb-PC2"/>
                         <outlet property="gameLogo" destination="cRt-cg-cQX" id="NY9-VV-vzy"/>
                         <outlet property="gameTitle" destination="J1R-sE-3P4" id="KjZ-Mj-rZr"/>
-                        <outlet property="howToPlayButton" destination="tAX-4p-EDH" id="oR2-pf-0hi"/>
                         <outlet property="leaderboardButton" destination="dQ8-ME-sFY" id="M9T-8b-yYO"/>
                         <outlet property="playButton" destination="ck6-us-fkb" id="aKi-XI-6bQ"/>
                         <outlet property="settingsButton" destination="pKa-sh-URR" id="r5L-Yc-2Y0"/>
                         <segue destination="hMH-Fu-ewU" kind="show" identifier="goToGame" id="5JQ-1c-rQ5"/>
-                        <segue destination="nLN-dv-Nli" kind="show" identifier="goToHowToPlay" id="uCX-qp-qaI"/>
                         <segue destination="rht-RU-YVr" kind="show" identifier="goToLeaderboard" id="ZRb-xu-iH5"/>
                         <segue destination="U28-DE-1ly" kind="show" identifier="goToSettings" id="z66-77-eZB"/>
+                        <segue destination="bfd-Wb-loF" kind="show" identifier="goToHowToPlay" id="8w5-x5-vf9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -200,21 +200,55 @@
             </objects>
             <point key="canvasLocation" x="3454" y="100"/>
         </scene>
-        <!--HOW TO PLAY-->
-        <scene sceneID="Ero-ZW-bbz">
+        <!--How To Play Table View Controller-->
+        <scene sceneID="iIU-Fy-cZA">
             <objects>
-                <viewController id="nLN-dv-Nli" customClass="HowToPlayViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c9T-4o-7Pb">
+                <tableViewController id="bfd-Wb-loF" customClass="HowToPlayTableViewController" customModule="Spellman_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hnL-f1-TzZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="2Ne-8E-3cf"/>
-                        <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="HOW TO PLAY" id="to7-5J-rAj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktd-HD-WY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.61568627450000002" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rulesCell" textLabel="yba-pf-Vwv" detailTextLabel="7fK-E7-587" style="IBUITableViewCellStyleSubtitle" id="6eY-dw-PJy">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6eY-dw-PJy" id="eA9-gq-Y5B">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yba-pf-Vwv">
+                                            <rect key="frame" x="20" y="-1" width="44" height="26"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7fK-E7-587">
+                                            <rect key="frame" x="20" y="25" width="50" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.61568627450000002" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bfd-Wb-loF" id="7ut-er-fv1"/>
+                            <outlet property="delegate" destination="bfd-Wb-loF" id="L8D-95-xHz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="H7r-ad-0jy"/>
+                    <connections>
+                        <segue destination="hMH-Fu-ewU" kind="show" identifier="goToGame" id="ePS-Z0-8pd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0j-98-RE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2167" y="-328"/>
+            <point key="canvasLocation" x="2044.9275362318842" y="-290.625"/>
         </scene>
         <!--LEADERBOARD-->
         <scene sceneID="qMW-yH-FsS">
@@ -299,6 +333,9 @@
             <point key="canvasLocation" x="1179.7101449275362" y="839.73214285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ePS-Z0-8pd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="logo2" width="164" height="123.5"/>
         <systemColor name="systemPinkColor">

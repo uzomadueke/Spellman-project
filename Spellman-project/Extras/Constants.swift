@@ -41,12 +41,12 @@ struct K {
     }
     
     struct Fonts {
-        static let retroGaming = "RetroGaming"
-        static let rainyHearts = "rainyhearts"
+        static let futuraBold = "FuturaBold"
+        static let futuraBook = "FuturaBook"
     }
     
     struct Colours {
-        static let bgColour = "BackgroundColour"
+        static let bgColour = "packground"
         static let buttonColour = "PinkColour"
         static let highlightColour = "TurquoiseColour"
         static let labelColour = "WhiteColour"

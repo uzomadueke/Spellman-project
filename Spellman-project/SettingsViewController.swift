@@ -86,9 +86,10 @@ class SettingsViewController: UIViewController {
     @IBAction func musicTag(_ sender: UISwitch){
         if sender.isOn == true {
             defaults.set(true, forKey: "Sound")
-            playButtonSound()
+            MusicPlayer.sharedHelper.playBGMusic()
         } else {
             defaults.set(false, forKey: "Sound")
+           // task_terminate(MusicPlayer.sharedHelper.playBGMusic())
         }
     }
     
