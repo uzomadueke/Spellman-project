@@ -66,6 +66,7 @@ class SettingsViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationItem.title = " "
+       // MusicPlayer.sharedHelper.playBGMusic()
     }
     
     
@@ -89,7 +90,7 @@ class SettingsViewController: UIViewController {
             MusicPlayer.sharedHelper.playBGMusic()
         } else {
             defaults.set(false, forKey: "Sound")
-           // task_terminate(MusicPlayer.sharedHelper.playBGMusic())
+          //  MusicPlayer.sharedHelper.playBGMusic.pause()
         }
     }
     
@@ -100,7 +101,6 @@ class SettingsViewController: UIViewController {
         MusicPlayer.sharedHelper.playSound(soundURL: K.Audio.buttonPressedSound)
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -110,5 +110,4 @@ class SettingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

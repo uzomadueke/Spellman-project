@@ -34,6 +34,7 @@ class WelcomeViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
         setNeedsStatusBarAppearanceUpdate()
+      //  MusicPlayer.sharedHelper.playBGMusic()
         
         buttonClicked = false
         
@@ -51,7 +52,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the  line below if you want to play Background music
-       // MusicPlayer.sharedHelper.playBGMusic()
+        MusicPlayer.sharedHelper.playBGMusic()
         
         animateViewController()
     }
@@ -67,7 +68,7 @@ class WelcomeViewController: UIViewController {
     
     
     
-    // This opens up the game page when the "play game" button is clicke.d
+    // This opens up the game page when the "play game" button is clicked.
     @IBAction func playButtonClicked(_ sender: UIButton){
         playButtonSound() // this is to play the button sound
         sender.pulsateBtn()

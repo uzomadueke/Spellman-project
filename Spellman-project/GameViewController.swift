@@ -11,8 +11,56 @@ import GameKit
 
 class GameViewController: UIViewController {
     
-    //var player: AVAudioPlayer?
-
+    @IBOutlet weak var hiddinWordLabel: UILabel!
+    @IBOutlet weak var trysLabel: UILabel!  //guessesRemainingLabel
+    @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet var keyboardbuttons: [UIButton]!
+    @IBOutlet var playWord: UIButton!
+    
+    var player: AVAudioPlayer?
+    
+    let defaults = UserDefaults.standard
+    var totalScore = 0 {
+        didSet {
+            defaults.set(totalScore, forKey: K.scoreKey)
+        }
+    }
+    
+   // let gameManager = GameDataManager()
+    var wordLetterArray = [String]()
+    var word = ""
+    
+    var maskedWord = ""
+    var maskedWordArray = [String]()
+    
+    var wordStrings = [String]()
+    var level = 0
+    var levelCompleted = false
+    var usedLetters = ""
+    
+    
+    //This is for keeping the players score
+    var score = 0 {
+        didSet {
+                pointsLabel.text = "\(score) points"
+            }
+        }
+    
+    
+    //this shows how many tries the player has left
+    var livesRemaining = 1 {
+        didSet {
+            trysLabel.text = "\(livesRemaining) lives left"
+        }
+    }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

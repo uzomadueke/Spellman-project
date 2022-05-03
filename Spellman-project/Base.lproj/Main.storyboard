@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -148,7 +147,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.61568627450000002" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iLf-uj-PlV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130.5" id="5F6-4U-WHQ"/>
                             <constraint firstItem="iLf-uj-PlV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8m7-Cj-YSE"/>
@@ -161,9 +160,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="9Dc-ln-QcZ"/>
                     <connections>
-                        <outlet property="HowToPlayButton" destination="tAX-4p-EDH" id="yGC-wb-PC2"/>
                         <outlet property="gameLogo" destination="cRt-cg-cQX" id="NY9-VV-vzy"/>
                         <outlet property="gameTitle" destination="J1R-sE-3P4" id="KjZ-Mj-rZr"/>
+                        <outlet property="howToPlayButton" destination="tAX-4p-EDH" id="Goy-P7-pMW"/>
                         <outlet property="leaderboardButton" destination="dQ8-ME-sFY" id="M9T-8b-yYO"/>
                         <outlet property="playButton" destination="ck6-us-fkb" id="aKi-XI-6bQ"/>
                         <outlet property="settingsButton" destination="pKa-sh-URR" id="r5L-Yc-2Y0"/>
@@ -185,20 +184,333 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-Wg-R5C">
-                                <rect key="frame" x="87" y="256" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-Jo-nPW">
+                                <rect key="frame" x="96" y="154" width="222.5" height="48.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPJ-Jv-IaN" userLabel="Points Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="48.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssp-2B-l8R">
+                                        <rect key="frame" x="92.5" y="0.0" width="23" height="48.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="40"/>
+                                        <color key="textColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Try Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-pw-4RM" userLabel="Trys Label">
+                                        <rect key="frame" x="137.5" y="0.0" width="85" height="48.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-Rf-1xX">
+                                <rect key="frame" x="128" y="457" width="123" height="33.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PLAY WORD" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.50127364240000005" blue="0.03953489609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VolumeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-tQ-BD9">
+                                <rect key="frame" x="260" y="456" width="40.5" height="34"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ahT-DK-I87">
+                                <rect key="frame" x="49.5" y="530" width="315" height="193"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNg-nu-aDf">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lu-af-vJq" userLabel="A">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L38-l8-HAS" userLabel="B">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-G1-F12">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="C">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-cz-QMu">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="D">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYS-wL-dY8">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="E">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBu-WX-Pdt">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="F">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-xi-bix">
+                                                <rect key="frame" x="270" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="G">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-9M-0Wd">
+                                        <rect key="frame" x="0.0" y="51" width="315" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-6C-5FZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="H">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-qp-IHV">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="I">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqI-Cl-v6r">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="J">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTi-x6-E6h">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="K">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtu-FF-1Da">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="L">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOA-fl-LLv">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="M">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7p-J5-T1a">
+                                                <rect key="frame" x="270" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="N">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1q-Jj-Luy">
+                                        <rect key="frame" x="0.0" y="102" width="315" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-Zk-1Ab">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="O">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swF-zX-pmk">
+                                                <rect key="frame" x="45" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="P">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-Ir-i5T">
+                                                <rect key="frame" x="90" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Q">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQf-89-HRT">
+                                                <rect key="frame" x="135" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="R">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-Ok-Fcv">
+                                                <rect key="frame" x="180" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="S">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-Dc-eCJ">
+                                                <rect key="frame" x="225" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="T">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-cj-3Ge">
+                                                <rect key="frame" x="270" y="0.0" width="45" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="U">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWb-ZI-erU">
+                                        <rect key="frame" x="0.0" y="153" width="315" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8La-SK-ajB">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="V">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-w8-WT5">
+                                                <rect key="frame" x="63" y="0.0" width="63" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="W">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBV-RL-t9g">
+                                                <rect key="frame" x="126" y="0.0" width="63" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkJ-iw-8qy">
+                                                <rect key="frame" x="189" y="0.0" width="63" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Y">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-Uo-DR1">
+                                                <rect key="frame" x="252" y="0.0" width="63" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Z">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21099463030000001" green="0.21063872880000001" blue="0.21685544039999999" alpha="0.13679286409999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _ _ _ _ _ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWl-MQ-YMp" userLabel="Hidden Word label">
+                                <rect key="frame" x="125.5" y="329.5" width="163" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gv4-Pa-uzJ"/>
                         <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IRV-Jo-nPW" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="AtY-fv-umL"/>
+                            <constraint firstItem="ahT-DK-I87" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="178.5" id="E2n-N7-hb6"/>
+                            <constraint firstItem="pWl-MQ-YMp" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-105.5" id="Hfc-2r-gK3"/>
+                            <constraint firstItem="Rsq-Rf-1xX" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" constant="-17.5" id="Hgc-h9-67C"/>
+                            <constraint firstItem="ahT-DK-I87" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="LwS-gO-ge5"/>
+                            <constraint firstItem="IRV-Jo-nPW" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-269.75" id="Qoc-0E-Qjs"/>
+                            <constraint firstItem="uMx-tQ-BD9" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" constant="73" id="T0x-xF-5Gw"/>
+                            <constraint firstItem="Rsq-Rf-1xX" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="25.5" id="WM9-IW-w0p"/>
+                            <constraint firstItem="uMx-tQ-BD9" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="25" id="avB-pZ-KZL"/>
+                            <constraint firstItem="pWl-MQ-YMp" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="mLQ-BC-EVA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SPELLMAN" id="cc5-e4-7a4"/>
+                    <connections>
+                        <outlet property="hiddinWordLabel" destination="pWl-MQ-YMp" id="Wpt-B8-XCa"/>
+                        <outlet property="playWord" destination="Rsq-Rf-1xX" id="dDp-Ht-vXx"/>
+                        <outlet property="pointsLabel" destination="iPJ-Jv-IaN" id="wtF-CK-fhe"/>
+                        <outlet property="trysLabel" destination="uD4-pw-4RM" id="2ad-4q-WRa"/>
+                        <outletCollection property="keyboardbuttons" destination="0lu-af-vJq" collectionClass="NSMutableArray" id="bFE-Iv-ciW"/>
+                        <outletCollection property="keyboardbuttons" destination="L38-l8-HAS" collectionClass="NSMutableArray" id="J5h-V0-6qA"/>
+                        <outletCollection property="keyboardbuttons" destination="Mby-G1-F12" collectionClass="NSMutableArray" id="cae-tI-LvT"/>
+                        <outletCollection property="keyboardbuttons" destination="Vjc-cz-QMu" collectionClass="NSMutableArray" id="pPk-PD-JTg"/>
+                        <outletCollection property="keyboardbuttons" destination="jYS-wL-dY8" collectionClass="NSMutableArray" id="4hY-Zr-1VB"/>
+                        <outletCollection property="keyboardbuttons" destination="rBu-WX-Pdt" collectionClass="NSMutableArray" id="c11-Cp-B73"/>
+                        <outletCollection property="keyboardbuttons" destination="yDy-xi-bix" collectionClass="NSMutableArray" id="QPw-MN-nmS"/>
+                        <outletCollection property="keyboardbuttons" destination="V0l-6C-5FZ" collectionClass="NSMutableArray" id="chq-ac-873"/>
+                        <outletCollection property="keyboardbuttons" destination="uwF-qp-IHV" collectionClass="NSMutableArray" id="nxv-zq-GgC"/>
+                        <outletCollection property="keyboardbuttons" destination="BqI-Cl-v6r" collectionClass="NSMutableArray" id="bkY-Sp-ddf"/>
+                        <outletCollection property="keyboardbuttons" destination="pTi-x6-E6h" collectionClass="NSMutableArray" id="GaS-tt-Utn"/>
+                        <outletCollection property="keyboardbuttons" destination="Qtu-FF-1Da" collectionClass="NSMutableArray" id="yKc-oj-nPF"/>
+                        <outletCollection property="keyboardbuttons" destination="mOA-fl-LLv" collectionClass="NSMutableArray" id="1Ut-bA-k2z"/>
+                        <outletCollection property="keyboardbuttons" destination="e7p-J5-T1a" collectionClass="NSMutableArray" id="vXF-S7-lLt"/>
+                        <outletCollection property="keyboardbuttons" destination="9aD-Zk-1Ab" collectionClass="NSMutableArray" id="Fve-jn-tHn"/>
+                        <outletCollection property="keyboardbuttons" destination="swF-zX-pmk" collectionClass="NSMutableArray" id="tLX-dv-gwm"/>
+                        <outletCollection property="keyboardbuttons" destination="O6l-Ir-i5T" collectionClass="NSMutableArray" id="AqI-db-9TR"/>
+                        <outletCollection property="keyboardbuttons" destination="JQf-89-HRT" collectionClass="NSMutableArray" id="rz2-s3-7gE"/>
+                        <outletCollection property="keyboardbuttons" destination="Rcs-Ok-Fcv" collectionClass="NSMutableArray" id="VPx-TK-Hqc"/>
+                        <outletCollection property="keyboardbuttons" destination="lMq-Dc-eCJ" collectionClass="NSMutableArray" id="4Ka-a2-TNS"/>
+                        <outletCollection property="keyboardbuttons" destination="tZP-cj-3Ge" collectionClass="NSMutableArray" id="exw-zR-3yS"/>
+                        <outletCollection property="keyboardbuttons" destination="8La-SK-ajB" collectionClass="NSMutableArray" id="3TU-Ij-UHm"/>
+                        <outletCollection property="keyboardbuttons" destination="FaB-w8-WT5" collectionClass="NSMutableArray" id="rOd-OV-xJm"/>
+                        <outletCollection property="keyboardbuttons" destination="XBV-RL-t9g" collectionClass="NSMutableArray" id="w6B-oG-QX9"/>
+                        <outletCollection property="keyboardbuttons" destination="wkJ-iw-8qy" collectionClass="NSMutableArray" id="SG3-9k-u36"/>
+                        <outletCollection property="keyboardbuttons" destination="FfG-Uo-DR1" collectionClass="NSMutableArray" id="77R-ji-TBc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D67-7R-yWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3454" y="100"/>
+            <point key="canvasLocation" x="3357.971014492754" y="109.82142857142857"/>
         </scene>
         <!--How To Play Table View Controller-->
         <scene sceneID="iIU-Fy-cZA">
@@ -211,21 +523,21 @@
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rulesCell" textLabel="yba-pf-Vwv" detailTextLabel="7fK-E7-587" style="IBUITableViewCellStyleSubtitle" id="6eY-dw-PJy">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="72.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6eY-dw-PJy" id="eA9-gq-Y5B">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yba-pf-Vwv">
-                                            <rect key="frame" x="20" y="-1" width="44" height="26"/>
+                                            <rect key="frame" x="20" y="10.5" width="44" height="26"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7fK-E7-587">
-                                            <rect key="frame" x="20" y="25" width="50" height="19.5"/>
+                                            <rect key="frame" x="20" y="40" width="50" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                             <nil key="textColor"/>
@@ -248,7 +560,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0j-98-RE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044.9275362318842" y="-290.625"/>
+            <point key="canvasLocation" x="2167" y="-307"/>
         </scene>
         <!--LEADERBOARD-->
         <scene sceneID="qMW-yH-FsS">
@@ -264,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIL-HJ-Q8z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2167" y="495"/>
+            <point key="canvasLocation" x="2167" y="540"/>
         </scene>
         <!--SETTINGS-->
         <scene sceneID="KWv-JT-gTw">
@@ -330,16 +642,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGZ-Xw-VoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179.7101449275362" y="839.73214285714278"/>
+            <point key="canvasLocation" x="1180" y="929"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ePS-Z0-8pd"/>
+        <segue reference="5JQ-1c-rQ5"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="VolumeIcon" width="40.5" height="34"/>
         <image name="logo2" width="164" height="123.5"/>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
