@@ -11,7 +11,7 @@ import GameKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var hiddinWordLabel: UILabel!
+    @IBOutlet weak var hiddenWordLabel: UILabel!
     @IBOutlet weak var trysLabel: UILabel!  //guessesRemainingLabel
     @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet var keyboardbuttons: [UIButton]!
@@ -64,13 +64,58 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = K.appName
+        
 
         // Do any additional setup after loading the view.
     }
     
+    
+    // for typing letters to guess the hidden word
+    @IBAction func keyboardLetterTapped(_ sender: UIButton) {
+        guard let keyboardLetterChosen = sender.currentTitle?.capitalized else { return }
+        
+        usedLetters.append(keyboardLetterChosen)
+        
+        if wordLetterArray.contains(keyboardLetterChosen) {
+            for (index, letter) in wordLetterArray.enumerated(){
+                if keyboardLetterChosen == letter {
+                }
+            }
+            
+            maskedWord == maskedWordArray.joined()
+            Vibration.success.vibrate()
+            playSound(sound: K.Audio.correctAnswerSound)
+        }
+        else {
+            livesRemaining -= 1
+            playSound(sound: K.Audio.wrongAnswerSound)
+        }
+        
+        sender.isEnabled = false
+        sender.setTitleColor(UIColor(named: K.Colours.buttonColour), for: .disabled)
+        hiddenWordLabel.text = maskedWord
+        
+        // check to see if the game is completed + reset
+      /*  checkToSeeIfCompleted()
+        
+        if livesRemaining <= 1 {
+            navigationItem.rightBarButtonItem?.isEnabled = false
+        }
+        
+        if levelCompleted {
+            for button in letterButtons {
+                button.isEnabled = true
+                navigationItem.rightBarButtonItem?.isEnabled = true
+            }
+            levelCompleted = false
+        }*/
+    }
 
     
-    
+    func playSound(sound: String) {
+        MusicPlayer.sharedHelper.playSound(soundURL: sound)
+    }
     
     /*
     // MARK: - Navigation

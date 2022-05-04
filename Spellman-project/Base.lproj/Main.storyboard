@@ -231,6 +231,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="uKT-uf-Lwm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L38-l8-HAS" userLabel="B">
                                                 <rect key="frame" x="45" y="0.0" width="45" height="40"/>
@@ -239,6 +242,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="dzO-am-z4m"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-G1-F12">
                                                 <rect key="frame" x="90" y="0.0" width="45" height="40"/>
@@ -247,6 +253,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="VoN-Qb-bL7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjc-cz-QMu">
                                                 <rect key="frame" x="135" y="0.0" width="45" height="40"/>
@@ -255,6 +264,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="Oyn-mp-KtG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYS-wL-dY8">
                                                 <rect key="frame" x="180" y="0.0" width="45" height="40"/>
@@ -263,6 +275,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="bcc-fP-bpw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBu-WX-Pdt">
                                                 <rect key="frame" x="225" y="0.0" width="45" height="40"/>
@@ -271,6 +286,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="XSJ-zO-4Lu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-xi-bix">
                                                 <rect key="frame" x="270" y="0.0" width="45" height="40"/>
@@ -279,6 +297,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="DUC-a9-DUY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -292,6 +313,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="ARd-zI-xfM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-qp-IHV">
                                                 <rect key="frame" x="45" y="0.0" width="45" height="40"/>
@@ -300,6 +324,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="ev0-Ig-gfh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqI-Cl-v6r">
                                                 <rect key="frame" x="90" y="0.0" width="45" height="40"/>
@@ -308,6 +335,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="zOx-gI-qqw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTi-x6-E6h">
                                                 <rect key="frame" x="135" y="0.0" width="45" height="40"/>
@@ -316,6 +346,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="hXH-b8-Wgb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtu-FF-1Da">
                                                 <rect key="frame" x="180" y="0.0" width="45" height="40"/>
@@ -324,6 +357,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="eCy-b9-h4d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOA-fl-LLv">
                                                 <rect key="frame" x="225" y="0.0" width="45" height="40"/>
@@ -332,6 +368,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="Feq-JU-rrM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7p-J5-T1a">
                                                 <rect key="frame" x="270" y="0.0" width="45" height="40"/>
@@ -340,6 +379,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="Tun-fV-yqy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -353,6 +395,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="Q1I-Yn-IwV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swF-zX-pmk">
                                                 <rect key="frame" x="45" y="0.0" width="45" height="40"/>
@@ -361,6 +406,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="3Q0-5D-phi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-Ir-i5T">
                                                 <rect key="frame" x="90" y="0.0" width="45" height="40"/>
@@ -369,6 +417,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="JgV-pR-9rK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQf-89-HRT">
                                                 <rect key="frame" x="135" y="0.0" width="45" height="40"/>
@@ -377,6 +428,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="gSu-ac-r79"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-Ok-Fcv">
                                                 <rect key="frame" x="180" y="0.0" width="45" height="40"/>
@@ -385,6 +439,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="NnQ-1i-Hq4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-Dc-eCJ">
                                                 <rect key="frame" x="225" y="0.0" width="45" height="40"/>
@@ -393,6 +450,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="hU8-UA-NKN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZP-cj-3Ge">
                                                 <rect key="frame" x="270" y="0.0" width="45" height="40"/>
@@ -401,6 +461,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="Ln8-Ny-QV4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -414,6 +477,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="2UP-gg-AS9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaB-w8-WT5">
                                                 <rect key="frame" x="63" y="0.0" width="63" height="40"/>
@@ -422,6 +488,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="8aX-T6-TwC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBV-RL-t9g">
                                                 <rect key="frame" x="126" y="0.0" width="63" height="40"/>
@@ -430,6 +499,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="r7y-FD-hgO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkJ-iw-8qy">
                                                 <rect key="frame" x="189" y="0.0" width="63" height="40"/>
@@ -438,6 +510,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="F7r-3K-81l"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-Uo-DR1">
                                                 <rect key="frame" x="252" y="0.0" width="63" height="40"/>
@@ -446,6 +521,9 @@
                                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyboardLetterTapped:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="cD2-AG-aab"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -476,7 +554,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="SPELLMAN" id="cc5-e4-7a4"/>
                     <connections>
-                        <outlet property="hiddinWordLabel" destination="pWl-MQ-YMp" id="Wpt-B8-XCa"/>
+                        <outlet property="hiddenWordLabel" destination="pWl-MQ-YMp" id="kL5-pu-fES"/>
                         <outlet property="playWord" destination="Rsq-Rf-1xX" id="dDp-Ht-vXx"/>
                         <outlet property="pointsLabel" destination="iPJ-Jv-IaN" id="wtF-CK-fhe"/>
                         <outlet property="trysLabel" destination="uD4-pw-4RM" id="2ad-4q-WRa"/>

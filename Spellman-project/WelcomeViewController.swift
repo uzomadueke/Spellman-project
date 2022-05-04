@@ -72,6 +72,7 @@ class WelcomeViewController: UIViewController {
     @IBAction func playButtonClicked(_ sender: UIButton){
         playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
+        sender.flashBtn() //
         
         Vibration.light.vibrate()  //adds vibration feature
         
