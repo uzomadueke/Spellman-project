@@ -244,39 +244,39 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkX-bN-CUH" userLabel="Exit Game">
-                                <rect key="frame" x="128" y="667" width="158" height="47"/>
+                                <rect key="frame" x="128" y="742" width="158" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="EXIT GAME" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                     <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="exitButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="2Bn-0B-doj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-g2-LTv" userLabel="Try Again">
-                                <rect key="frame" x="128" y="602" width="158" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="TRY AGAIN" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
-                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="tryAgainButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="RWK-ku-fE9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jC-oN-xP0" userLabel="Next Word">
-                                <rect key="frame" x="117" y="736" width="181" height="48"/>
+                                <rect key="frame" x="128" y="673" width="158" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="NEXT WORD" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                     <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="nextWordButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="bNI-O1-5GT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-g2-LTv" userLabel="Try Again">
+                                <rect key="frame" x="128" y="608" width="158" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TRY AGAIN" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tryAgainButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="RWK-ku-fE9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -313,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D67-7R-yWP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3133" y="100"/>
+            <point key="canvasLocation" x="3131.884057971015" y="99.776785714285708"/>
         </scene>
         <!--How To Play Table View Controller-->
         <scene sceneID="iIU-Fy-cZA">
@@ -336,14 +336,14 @@
                                             <rect key="frame" x="20" y="10.5" width="44" height="26"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7fK-E7-587">
                                             <rect key="frame" x="20" y="40" width="50" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -547,7 +547,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5JQ-1c-rQ5"/>
+        <segue reference="ePS-Z0-8pd"/>
         <segue reference="PmQ-Iy-rUU"/>
     </inferredMetricsTieBreakers>
     <resources>

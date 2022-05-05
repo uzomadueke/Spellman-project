@@ -82,10 +82,9 @@ struct K {
     }
     
     struct Colours {
-        static let bgColour = "packground"
-        static let buttonColour = "PinkColour"
-        static let highlightColour = "TurquoiseColour"
-        static let labelColour = "WhiteColour"
+        static let bgColour = "background"
+        static let bgColour2 = "background2"
+        static let bgColour3 = "background3"
     }
     
     struct wordsURL {

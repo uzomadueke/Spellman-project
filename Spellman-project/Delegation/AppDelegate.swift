@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // this for cutomizing the navigation bar, (the buttons and text).
     func setUpNavBarFormatting() {
         UINavigationBar.appearance().barTintColor = UIColor(named: K.Colours.bgColour)
-        UINavigationBar.appearance().tintColor = UIColor(named: K.Colours.buttonColour)
+        //UINavigationBar.appearance().tintColor = UIColor(named: K.Colours.buttonColour)
         //UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
         //                                                    NSAttributedString.Key.font: UIFont(name: K.Fonts.retroGaming, size: 22.0)!]
         UINavigationBar.appearance().isTranslucent = false

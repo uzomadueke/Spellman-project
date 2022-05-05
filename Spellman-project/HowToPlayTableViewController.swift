@@ -39,11 +39,6 @@ class HowToPlayTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.rulesCellName, for: indexPath)
         
-       // cell.textLabel?.font = UIFont(name: K.Fonts.futuraBold, size: 40.0)
-      //  cell.detailTextLabel?.font = UIFont(name: K.Fonts.futuraBook, size: 20.0)
-        cell.textLabel?.textColor = UIColor(named: K.Colours.labelColour)
-        cell.detailTextLabel?.textColor = UIColor(named: K.Colours.labelColour)
-        
         cell.textLabel?.text = rulesTitle[indexPath.row]
         cell.detailTextLabel?.text = rules[indexPath.row]
         return cell

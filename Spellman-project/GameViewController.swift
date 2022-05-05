@@ -143,6 +143,7 @@ class GameViewController: UIViewController {
     
     // This function clears the screen and selects a new word for the user to spell.
     @IBAction func nextWordButtonClicked(_ sender: UIButton) {
+        view.backgroundColor = UIColor(red: 92/255, green: 157/255, blue: 232/255, alpha: 1) // changes background colour back to blue
         level += 1
         levelCompleted = true
         
@@ -158,11 +159,13 @@ class GameViewController: UIViewController {
             hiddenWordLabel.text = hiddenWord
             hiddenWordArray = Array(hiddenWord)
         }
+        
     }
     
     
     
     @IBAction func exitButtonClicked(_ sender: UIButton) {
+        points = 0
         resetScreen()                                                                  // This resets the screen.
         
         if !buttonClicked {                                                            // This triggers the the segue process and goes back to the home screen page.
@@ -213,14 +216,7 @@ class GameViewController: UIViewController {
             else {
                 points -= 4
             }
-            
-            // call the pop up for losing
-        //    DispatchQueue.main.asyncAfter(deadline: .now()  + 0.3) {
-        //        [weak self] in
-        //        self?.performSegue(withIdentifier: K.losePopUpSegue, sender: self)
-        //    }
-
-            
+            view.backgroundColor = UIColor(red: 168/255, green: 4/255, blue: 14/255, alpha: 1) // Changes the background colour to red, when the user fails.
         }
         else if hiddenWord.contains("?") {
             
@@ -228,13 +224,9 @@ class GameViewController: UIViewController {
         else {
             points += 4
             TotalPoints += 4
+            view.backgroundColor = UIColor(red: 79/255, green: 178/255, blue: 105/255, alpha: 1) // Changes the background colour to green, when the player spells the word correctly.
             
-           // call the pop up for winning
-         //   DispatchQueue.main.asyncAfter(deadline: .now()  + 0.3) {
-          //      [weak self] in
-          //      self?.performSegue(withIdentifier: K.winPopUpSegue, sender: self)
-           // }
-           // nextWordButtonClicked()
+            
         }
     }
     
@@ -242,10 +234,11 @@ class GameViewController: UIViewController {
     
     func resetScreen() {
         //Reset the variables, the labels, the images
+        view.backgroundColor = UIColor(red: 92/255, green: 157/255, blue: 232/255, alpha: 1) // changes background colour back to blue
         guessingTextField.text = ""
         hiddenWord = ""
         usedLetters = Array(word)                                       // This will repeat the word for the user to spell it again.
-        points = 0
+       // points = 0
         
         for l in 1...word.count {
             hiddenWord += "?"
