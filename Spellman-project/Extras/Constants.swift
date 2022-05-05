@@ -22,9 +22,10 @@ struct K {
     static let howToPlaySegue = "goToHowToPlay"
     static let settingsSegue = "goToSettings"
     static let leaderboardSegue = "goToLeaderboard"
+    static let homePageSegue = "goToHome"
     
     // Score
-    static let scoreKey = "TotalScore"
+    static let scoreKey = "Points"
     
     struct Audio {
         // Keys UserDefaults
@@ -39,6 +40,22 @@ struct K {
         static let gameWonSound = "game-won"
         static let buttonPressedSound = "button-pressed"
     }
+    
+    // Voice Overs for the words to be spelled
+    struct voiceOver {
+        static let w1 = "CAT-recording"
+    }
+    
+    
+    // Voice Overs for the words to be spelled
+    struct wordsArray {
+        static let w1 = "CAT"
+       // static let w2 = "COOL"
+       // static let w3 = "SCHOOL"
+       // static let w4 = "APPLE"
+   //     static let w1 = "CAT"
+    }
+        
     
     struct Fonts {
         static let futuraBold = "FuturaBold"

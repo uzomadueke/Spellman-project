@@ -33,6 +33,7 @@
 		A0C35AB42821F4740094623A /* game-won.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0C35AAF2821F4740094623A /* game-won.wav */; };
 		A0C35AB52821F4740094623A /* button-pressed.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0C35AB02821F4740094623A /* button-pressed.wav */; };
 		A0C35AB72821F49D0094623A /* backgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0C35AB62821F49D0094623A /* backgroundmusic.mp3 */; };
+		A0FFF2B02823BA08000B8185 /* CAT-recording.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0FFF2AF2823BA08000B8185 /* CAT-recording.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		A0C35AAF2821F4740094623A /* game-won.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "game-won.wav"; sourceTree = "<group>"; };
 		A0C35AB02821F4740094623A /* button-pressed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "button-pressed.wav"; sourceTree = "<group>"; };
 		A0C35AB62821F49D0094623A /* backgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundmusic.mp3; sourceTree = "<group>"; };
+		A0FFF2AF2823BA08000B8185 /* CAT-recording.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "CAT-recording.mp3"; path = "../../../../../../../../CAT-recording.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		A0C35AB82821F5850094623A /* Voice-Overs */ = {
 			isa = PBXGroup;
 			children = (
+				A0FFF2AF2823BA08000B8185 /* CAT-recording.mp3 */,
 			);
 			path = "Voice-Overs";
 			sourceTree = "<group>";
@@ -217,12 +220,12 @@
 		A0F539EE281B68F6003CD210 /* AudioFiles */ = {
 			isa = PBXGroup;
 			children = (
-				A0C35AB82821F5850094623A /* Voice-Overs */,
 				A0C35AB62821F49D0094623A /* backgroundmusic.mp3 */,
 				A0C35AB02821F4740094623A /* button-pressed.wav */,
 				A0C35AAC2821F4730094623A /* correct-answer.wav */,
 				A0C35AAF2821F4740094623A /* game-won.wav */,
 				A0C35AAD2821F4730094623A /* wrong-answer.wav */,
+				A0C35AB82821F5850094623A /* Voice-Overs */,
 			);
 			path = AudioFiles;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				A004A979281E3C3500DBE664 /* FuturaBook.ttf in Resources */,
 				A078978D2819A10E00561AD8 /* Assets.xcassets in Resources */,
 				A0C35AB22821F4740094623A /* wrong-answer.wav in Resources */,
+				A0FFF2B02823BA08000B8185 /* CAT-recording.mp3 in Resources */,
 				A078978B2819A10B00561AD8 /* Main.storyboard in Resources */,
 				A0C35AB52821F4740094623A /* button-pressed.wav in Resources */,
 			);

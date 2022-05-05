@@ -71,8 +71,8 @@ class WelcomeViewController: UIViewController {
     // This opens up the game page when the "play game" button is clicked.
     @IBAction func playButtonClicked(_ sender: UIButton){
         playButtonSound() // this is to play the button sound
-        sender.pulsateBtn()
-        sender.flashBtn() //
+        sender.pulsateBtn()  // This calls the pulsating animation
+        sender.flashBtn() // This calls the Flash animation
         
         Vibration.light.vibrate()  //adds vibration feature
         
@@ -92,6 +92,7 @@ class WelcomeViewController: UIViewController {
     @IBAction func howToPlayButtonClicked(_ sender: UIButton){
         playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
+        sender.flashBtn() // This calls the Flash animation
         
         Vibration.light.vibrate()  //adds vibration feature
         
@@ -111,6 +112,7 @@ class WelcomeViewController: UIViewController {
     @IBAction func leaderboardButtonClicked(_ sender: UIButton){
         playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
+        sender.flashBtn() // This calls the Flash animation
         
         Vibration.light.vibrate()  //adds vibration feature
         
@@ -130,6 +132,7 @@ class WelcomeViewController: UIViewController {
     @IBAction func settingsButtonClicked(_ sender: UIButton){
         playButtonSound() // this is to play the button sound
         sender.pulsateBtn()
+        sender.flashBtn() // This calls the Flash animation
         
         Vibration.light.vibrate()  //adds vibration feature
         
