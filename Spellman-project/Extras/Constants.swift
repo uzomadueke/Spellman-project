@@ -23,6 +23,8 @@ struct K {
     static let settingsSegue = "goToSettings"
     static let leaderboardSegue = "goToLeaderboard"
     static let homePageSegue = "goToHome"
+    static let winPopUpSegue = "openWinPopUp"
+    static let losePopUpSegue = "openLosePopUp"
     
     // Score
     static let scoreKey = "Points"
@@ -32,6 +34,7 @@ struct K {
         static let bgMusicKey = "Sound"
         static let fxSoundKey = "SoundFX"
         static let volumeKey = "Volume"
+        static let VoiceOverKey = "Word" //
         
         // Music/sound constants
         static let bgMusic = "backgroundmusic"
@@ -42,19 +45,35 @@ struct K {
     }
     
     // Voice Overs for the words to be spelled
-    struct voiceOver {
-        static let w1 = "CAT-recording"
+    struct VoiceOver {
+        static let w1 = "APPLE"
+        static let w2 = "BOOK"
+        static let w3 = "CAT"
+        static let w4 = "DOG"
+        static let w5 = "ELEPHANT"
+        static let w6 = "FISH"
+        static let w7 = "GAZEBO"
+        static let w8 = "HATFIELD"
+        static let w9 = "INTERNATIONAL"
+        static let w10 = "JUICE"
+        static let w11 = "KID"
+        static let w12 = "LOUNGE"
+        static let w13 = "MONEY"
+        static let w14 = "NIGERIA"
+        static let w15 = "OCTOBER"
+        static let w16 = "PORTUGAL"
+        static let w17 = "QUEEN"
+        static let w18 = "ROAD"
+        static let w19 = "SAUCE"
+        static let w20 = "TIGER"
+        static let w21 = "UMBRELLA"
+        static let w22 = "VAN"
+        static let w23 = "WATER"
+        static let w24 = "XYLOPHONE"
+        static let w25 = "YELLOW"
+        static let w26 = "ZEBRA"
     }
-    
-    
-    // Voice Overs for the words to be spelled
-    struct wordsArray {
-        static let w1 = "CAT"
-       // static let w2 = "COOL"
-       // static let w3 = "SCHOOL"
-       // static let w4 = "APPLE"
-   //     static let w1 = "CAT"
-    }
+
         
     
     struct Fonts {

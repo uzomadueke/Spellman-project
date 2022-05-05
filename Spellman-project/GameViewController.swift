@@ -21,11 +21,23 @@ class GameViewController: UIViewController {
     @IBOutlet weak var tryAgainButton: UIButton!
     @IBOutlet weak var nextWordButton: UIButton!
     
+    
+    
+    // this is our array of arrays
+ //   var groups = [[String]]
+
+    // we create three simple string arrays for testing
+ //   var groupA = ["England", "Ireland", "Scotland", "Wales"]
+ //   var groupB = ["Canada", "Mexico", "United States"]
+ //   var groupC = ["China", "Japan", "South Korea"]
+    
+    
+    
+    
     var player: AVAudioPlayer?
     let defaults = UserDefaults.standard
     var buttonClicked = false
     
-    var wordLetterArray = ["CAT", "COOL", "SCHOOL", "APPLE"]
     var word = ""
     
     var hiddenWord = ""
@@ -122,6 +134,12 @@ class GameViewController: UIViewController {
     }
     
     
+    //
+    @IBAction func playWordClicked(_ sender: UIButton) {
+        wordVoiceOver()
+    }
+    
+    
     
     // This function clears the screen and selects a new word for the user to spell.
     @IBAction func nextWordButtonClicked(_ sender: UIButton) {
@@ -190,12 +208,19 @@ class GameViewController: UIViewController {
         
         if trys == 0 {
             if points == 0 {  // this does'nt allow to 'points' go below zero.
-                points = 0
+               // points = 0
             }
             else {
                 points -= 4
             }
+            
             // call the pop up for losing
+        //    DispatchQueue.main.asyncAfter(deadline: .now()  + 0.3) {
+        //        [weak self] in
+        //        self?.performSegue(withIdentifier: K.losePopUpSegue, sender: self)
+        //    }
+
+            
         }
         else if hiddenWord.contains("?") {
             
@@ -203,7 +228,12 @@ class GameViewController: UIViewController {
         else {
             points += 4
             TotalPoints += 4
+            
            // call the pop up for winning
+         //   DispatchQueue.main.asyncAfter(deadline: .now()  + 0.3) {
+          //      [weak self] in
+          //      self?.performSegue(withIdentifier: K.winPopUpSegue, sender: self)
+           // }
            // nextWordButtonClicked()
         }
     }
@@ -232,9 +262,100 @@ class GameViewController: UIViewController {
     }
     
     
+    func playWord(play: String) {
+        MusicPlayer.sharedHelper.playWord(playURL: play)
+    }
+    
+    
     
 //-------------------------------------------------------------------------------------------------------------
-
+    
+    // These are the words that are going to be spelled.
+    var wordLetterArray = ["APPLE", "BOOK", "CAT", "DOG", "ELEPHANT", "FISH", "GAZEBO", "HATFIELD", "INTERNATIONAL", "JUICE", "KID", "LOUNGE", "MONEY",                          "NIGERIA", "OCTOBER", "PORTUGAL", "QUEEN", "ROAD", "SAUCE", "TIGER", "UMBRELLA", "VAN", "WATER", "XYLOPHONE", "YELLOW", "ZEBRA"]
+    
+    
+    
+    // This is a function that will play the 'VoiceOver' if its name is equal to (==) the word meant to be spelled.
+    func wordVoiceOver() {
+        if K.VoiceOver.w1 == word {
+            playWord(play: K.VoiceOver.w1) ///
+        }
+        else if K.VoiceOver.w2 == word {
+            playWord(play: K.VoiceOver.w2) ///
+        }
+        else if K.VoiceOver.w3 == word {
+            playWord(play: K.VoiceOver.w3) ///
+        }
+        else if K.VoiceOver.w4 == word {
+            playWord(play: K.VoiceOver.w4) ///
+        }
+        else if K.VoiceOver.w5 == word {
+            playWord(play: K.VoiceOver.w5) ///
+        }
+        else if K.VoiceOver.w6 == word {
+            playWord(play: K.VoiceOver.w6) ///
+        }
+        else if K.VoiceOver.w7 == word {
+            playWord(play: K.VoiceOver.w7) ///
+        }
+        else if K.VoiceOver.w8 == word {
+            playWord(play: K.VoiceOver.w8) ///
+        }
+        else if K.VoiceOver.w9 == word {
+            playWord(play: K.VoiceOver.w9) ///
+        }
+        else if K.VoiceOver.w10 == word {
+            playWord(play: K.VoiceOver.w10) ///
+        }
+        else if K.VoiceOver.w11 == word {
+            playWord(play: K.VoiceOver.w11) ///
+        }
+        else if K.VoiceOver.w12 == word {
+            playWord(play: K.VoiceOver.w12) ///
+        }
+        else if K.VoiceOver.w13 == word {
+            playWord(play: K.VoiceOver.w13) ///
+        }
+        else if K.VoiceOver.w14 == word {
+            playWord(play: K.VoiceOver.w14) ///
+        }
+        else if K.VoiceOver.w15 == word {
+            playWord(play: K.VoiceOver.w15) ///
+        }
+        else if K.VoiceOver.w16 == word {
+            playWord(play: K.VoiceOver.w16) ///
+        }
+        else if K.VoiceOver.w17 == word {
+            playWord(play: K.VoiceOver.w17) ///
+        }
+        else if K.VoiceOver.w18 == word {
+            playWord(play: K.VoiceOver.w18) ///
+        }
+        else if K.VoiceOver.w19 == word {
+            playWord(play: K.VoiceOver.w19) ///
+        }
+        else if K.VoiceOver.w20 == word {
+            playWord(play: K.VoiceOver.w20) ///
+        }
+        else if K.VoiceOver.w21 == word {
+            playWord(play: K.VoiceOver.w21) ///
+        }
+        else if K.VoiceOver.w22 == word {
+            playWord(play: K.VoiceOver.w22) ///
+        }
+        else if K.VoiceOver.w23 == word {
+            playWord(play: K.VoiceOver.w23) ///
+        }
+        else if K.VoiceOver.w24 == word {
+            playWord(play: K.VoiceOver.w24) ///
+        }
+        else if K.VoiceOver.w25 == word {
+            playWord(play: K.VoiceOver.w25) ///
+        }
+        else if K.VoiceOver.w26 == word {
+            playWord(play: K.VoiceOver.w26) ///
+        }
+    }
     
     
   // this is for adding the the voice overs to an array, add to spellman.  Find a way to link the voiceOverArray to wordArray so that when (w1) is chosen, (v1) is chosen simultaneously.
@@ -246,6 +367,26 @@ class GameViewController: UIViewController {
     }*/
     
     
+    
+    
+
+    // then add them all to the "groups" array
+/*    func addArrays() {
+        groups.append(groupA)
+        groups.append(groupB)
+        groups.append(groupC)
+    }
+
+    // this will print out the array of arays
+    print("The groups are:", groups)
+
+    // we now append an item to one of the arrays
+    groups[1].append("Costa Rica")
+    print("\nAfter adding Costa Rica, the groups are:", groups)
+
+    // and now print out groupB's contents again
+    print("\nGroup B still contains:", groupB)
+    */
     
     /*
     // MARK: - Navigation

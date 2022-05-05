@@ -17,6 +17,7 @@ class MusicPlayer {
     lazy var musicOn = defaults.object(forKey: K.Audio.bgMusicKey) as? Bool ?? true
     lazy var fxSoundOn = defaults.object(forKey: K.Audio.fxSoundKey) as? Bool ?? true
     lazy var volume = defaults.object(forKey: K.Audio.volumeKey) as? Float ?? 1.0
+    lazy var playWord = defaults.object(forKey: K.Audio.VoiceOverKey) as? Bool ?? true
     
     
     
@@ -63,7 +64,30 @@ class MusicPlayer {
             audioPlayer?.stop()
             return
         }
+    }
+    
+    
+    
+    // This is for playing the sounds for particular buttons
+    func playWord(playURL: String) {
         
+        let playURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: playURL, ofType: "wav")!)
+        
+        if fxSoundOn {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: playURL as URL)
+                audioPlayer?.numberOfLoops = 0
+                audioPlayer?.prepareToPlay()
+                audioPlayer?.volume = volume
+                audioPlayer?.play()
+            } catch {
+                print("Could not play the voice over for the words")
+            }
+            
+        } else {
+            audioPlayer?.stop()
+            return
+        }
     }
 }
 
