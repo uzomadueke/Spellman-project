@@ -7,57 +7,9 @@
 
 import UIKit
 
-//MARK: - UIViewController Extensions
-/*
-extension GameViewController {
-    
-    func showAlertAction(title: String, message: String, actionTitle: String = "OK", actionClosure: @escaping () -> Void){
-        DispatchQueue.main.async {
-            [weak self] in
-            let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            ac.addAction(UIAlertAction(title: actionTitle, style: .default, handler: {(action: UIAlertAction!) in actionClosure()}))
-            ac.formatUI()
-            self?.present(ac, animated: true, completion: nil)
-        }
-    }
-    
-    func gameFinishedAlert(title: String, message: String, word: String, actionTitle: String = "OK", actionClosure: @escaping () -> Void){
-        DispatchQueue.main.async {
-            [weak self] in
-            
-            let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            
-            ac.addAction(UIAlertAction(title: "Define word", style: .default, handler: { (UIAlertAction) in
-                
-                if UIReferenceLibraryViewController.dictionaryHasDefinition(forTerm: word) {
-                    let ref: UIReferenceLibraryViewController = UIReferenceLibraryViewController(term: word)
-                    self?.present(ref, animated: true, completion: nil)
-                }
-                actionClosure()
-            }))
-            ac.addAction(UIAlertAction(title: actionTitle, style: .default, handler: {(action: UIAlertAction!) in actionClosure()}))
-            
-            ac.formatUI()
-            
-            self?.present(ac, animated: true, completion: nil)
-        }
-    }
-  
-}*/
 
 //MARK: - UIButton Extensions
 extension UIButton {
-    
-    // Button formatting
-    func setRoundBtnShadow() {
-        self.layer.backgroundColor = UIColor.red.cgColor
-        self.layer.cornerRadius = 8.0
-        self.layer.shadowColor = UIColor.systemGray2.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 6.0)
-        self.layer.shadowRadius = 8
-        self.layer.shadowOpacity = 0.6
-        self.layer.masksToBounds = false
-    }
     
     // Fade in button
     func fadeInBtn(duration: Double) {
@@ -187,23 +139,6 @@ extension UITableView {
             delayCounter += 1
         }
     }
-    
-}
-
-//MARK: - UIAlertController Extension
-
-extension UIAlertController {
-    
-    func formatUI(){
-        guard let title = self.title else { return }
-        guard let message = self.message else { return }
-        
-        self.setValue(NSAttributedString(string: message, attributes: [NSAttributedString.Key.font: UIFont(name: K.Fonts.futuraBook, size: 18)!]), forKey: "attributedMessage")
-        self.setValue(NSAttributedString(string: title, attributes: [NSAttributedString.Key.font: UIFont(name: K.Fonts.futuraBold, size: 18.0)!]), forKey: "attributedTitle")
-        //self.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = UIColor.darkGray
-      //  self.view.tintColor = UIColor(named: K.Colours.buttonColour)
-    }
-  
     
 }
 

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		A004A973281E2D3700DBE664 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004A972281E2D3700DBE664 /* GameRules.swift */; };
 		A004A975281E306A00DBE664 /* HowToPlayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004A974281E306A00DBE664 /* HowToPlayTableViewController.swift */; };
-		A004A979281E3C3500DBE664 /* FuturaBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A004A977281E3C0B00DBE664 /* FuturaBook.ttf */; };
-		A004A97A281E3C3C00DBE664 /* FuturaBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A004A978281E3C1300DBE664 /* FuturaBold.ttf */; };
 		A0297F11281B73C400D6140C /* VibrationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0297F10281B73C400D6140C /* VibrationKit.swift */; };
 		A067AEA2281BD595009878CA /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067AEA1281BD595009878CA /* MusicPlayer.swift */; };
 		A067AEA7281BE43C009878CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A067AEA4281BE40F009878CA /* AVFoundation.framework */; };
@@ -81,8 +79,6 @@
 /* Begin PBXFileReference section */
 		A004A972281E2D3700DBE664 /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
 		A004A974281E306A00DBE664 /* HowToPlayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayTableViewController.swift; sourceTree = "<group>"; };
-		A004A977281E3C0B00DBE664 /* FuturaBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaBook.ttf; path = ../../../../../../../FuturaBook.ttf; sourceTree = "<group>"; };
-		A004A978281E3C1300DBE664 /* FuturaBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FuturaBold.ttf; path = ../../../../../../../FuturaBold.ttf; sourceTree = "<group>"; };
 		A0297F10281B73C400D6140C /* VibrationKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrationKit.swift; sourceTree = "<group>"; };
 		A067AEA1281BD595009878CA /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		A067AEA4281BE40F009878CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +100,8 @@
 		A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		A07897BD281A361200561AD8 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		A07897C0281A4F4000561AD8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0A0BE8C2825B895001B5FC4 /* FuturaBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaBook.ttf; sourceTree = "<group>"; };
+		A0A0BE8D2825B89C001B5FC4 /* FuturaBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaBold.ttf; sourceTree = "<group>"; };
 		A0C35AAC2821F4730094623A /* correct-answer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-answer.wav"; sourceTree = "<group>"; };
 		A0C35AAD2821F4730094623A /* wrong-answer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wrong-answer.wav"; sourceTree = "<group>"; };
 		A0C35AAF2821F4740094623A /* game-won.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "game-won.wav"; sourceTree = "<group>"; };
@@ -195,15 +193,9 @@
 		A07897822819A10A00561AD8 /* Spellman-project */ = {
 			isa = PBXGroup;
 			children = (
-				A0FFF2E928245C58000B8185 /* PopUpViews */,
-				A07897B4281A0B9700561AD8 /* GameViewController.swift */,
-				A07897872819A10A00561AD8 /* WelcomeViewController.swift */,
-				A004A974281E306A00DBE664 /* HowToPlayTableViewController.swift */,
-				A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */,
-				A07897B6281A1F5800561AD8 /* SettingsViewController.swift */,
+				A0A0BE8E2825B971001B5FC4 /* ViewControllers */,
 				A078978E2819A10E00561AD8 /* LaunchScreen.storyboard */,
 				A07897892819A10B00561AD8 /* Main.storyboard */,
-				A004A972281E2D3700DBE664 /* GameRules.swift */,
 				A07897BF281A4EE300561AD8 /* Extras */,
 				A0F539EE281B68F6003CD210 /* AudioFiles */,
 				A07897BC281A348D00561AD8 /* Extensions */,
@@ -253,11 +245,32 @@
 		A07897BF281A4EE300561AD8 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				A004A977281E3C0B00DBE664 /* FuturaBook.ttf */,
-				A004A978281E3C1300DBE664 /* FuturaBold.ttf */,
+				A0A0BE8B2825B888001B5FC4 /* Fonts */,
 				A07897C0281A4F4000561AD8 /* Constants.swift */,
+				A004A972281E2D3700DBE664 /* GameRules.swift */,
 			);
 			path = Extras;
+			sourceTree = "<group>";
+		};
+		A0A0BE8B2825B888001B5FC4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A0A0BE8C2825B895001B5FC4 /* FuturaBook.ttf */,
+				A0A0BE8D2825B89C001B5FC4 /* FuturaBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A0A0BE8E2825B971001B5FC4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A07897872819A10A00561AD8 /* WelcomeViewController.swift */,
+				A07897B4281A0B9700561AD8 /* GameViewController.swift */,
+				A004A974281E306A00DBE664 /* HowToPlayTableViewController.swift */,
+				A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */,
+				A07897B6281A1F5800561AD8 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A0C35AB82821F5850094623A /* Voice-Overs */ = {
@@ -304,13 +317,6 @@
 				A0C35AB82821F5850094623A /* Voice-Overs */,
 			);
 			path = AudioFiles;
-			sourceTree = "<group>";
-		};
-		A0FFF2E928245C58000B8185 /* PopUpViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PopUpViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,7 +429,6 @@
 				A0FFF2D6282416EA000B8185 /* APPLE.wav in Resources */,
 				A0FFF2D8282416EA000B8185 /* OCTOBER.wav in Resources */,
 				A07897902819A10E00561AD8 /* LaunchScreen.storyboard in Resources */,
-				A004A97A281E3C3C00DBE664 /* FuturaBold.ttf in Resources */,
 				A0C35AB42821F4740094623A /* game-won.wav in Resources */,
 				A0FFF2D9282416EA000B8185 /* WATER.wav in Resources */,
 				A0FFF2D7282416EA000B8185 /* GAZEBO.wav in Resources */,
@@ -435,7 +440,6 @@
 				A0FFF2D4282416EA000B8185 /* NIGERIA.wav in Resources */,
 				A0FFF2D2282416EA000B8185 /* ZEBRA.wav in Resources */,
 				A0C35AB72821F49D0094623A /* backgroundmusic.mp3 in Resources */,
-				A004A979281E3C3500DBE664 /* FuturaBook.ttf in Resources */,
 				A078978D2819A10E00561AD8 /* Assets.xcassets in Resources */,
 				A0FFF2D1282416EA000B8185 /* QUEEN.wav in Resources */,
 				A0FFF2D5282416EA000B8185 /* BOOK.wav in Resources */,

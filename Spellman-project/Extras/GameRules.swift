@@ -14,17 +14,17 @@ struct rulesData {
         "2. Guess the letter",
         "3. Lives",
         "4. Points",
-        "5. Clues",
-        "6. Winning"
+        "5. Winning",
+        "6. Losing"
     ]
     
     static let gamesRules = [
-        "Guess the word before the hangman is hung and get as many points as you can.",
+        "Spell the word correctly after listening to its pronounciation, by clicking 'Play Word'.",
         "When you get a letter right you’ll see where that letter goes in the word.",
-        "You start with 10 lives until the hangman is hung.",
-        "You gain a point for correct guesses and loose a point for incorrect guesses.",
-        "You get one clue per word, but you sacrifice a point and life for each clue.",
-        "If you guess the word right, you can continue playing with a new word."
+        "You start with 1 life only.",
+        "You gain 4 points for correctly spelling a word and loose 4 points for an incorrect letter.",
+        "When you spell a word correctly, the screen turns green. Click 'Next Word' to continue and spell a diffferent word.",
+        "When you spell a word correctly, the screen turns red. Click 'Try Again' to spell the word again."
     ]
 }
 

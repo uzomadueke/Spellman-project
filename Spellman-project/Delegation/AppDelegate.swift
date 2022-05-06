@@ -23,20 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         defaults.set(numberOfTimesOpened, forKey: "noTimesAppOpened")
         
-        /*
-        let center = UNUserNotificationCenter.current()
-        
-        center.requestAuthorization(options: [.alert, .badge, .sound]) { (notifcationsAllowed, error) in
-            if error != nil {
-                print(error ?? "Error setting up notifications!!")
-            }
-        }
-        
-        scheduleNotification()
-        */
-        
-       // setUpNavBarFormatting()
-        
         return true
     }
     

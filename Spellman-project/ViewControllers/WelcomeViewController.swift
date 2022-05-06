@@ -34,7 +34,7 @@ class WelcomeViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
         setNeedsStatusBarAppearanceUpdate()
-      //  MusicPlayer.sharedHelper.playBGMusic()
+        MusicPlayer.sharedHelper.playBGMusic()
         
         buttonClicked = false
         
@@ -52,7 +52,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the  line below if you want to play Background music
-        MusicPlayer.sharedHelper.playBGMusic()
+       // MusicPlayer.sharedHelper.playBGMusic()
         
         animateViewController()
     }

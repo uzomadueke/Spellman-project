@@ -20,20 +20,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var exitButton: UIButton!
     @IBOutlet weak var tryAgainButton: UIButton!
     @IBOutlet weak var nextWordButton: UIButton!
-    
-    
-    
-    // this is our array of arrays
- //   var groups = [[String]]
+  
 
-    // we create three simple string arrays for testing
- //   var groupA = ["England", "Ireland", "Scotland", "Wales"]
- //   var groupB = ["Canada", "Mexico", "United States"]
- //   var groupC = ["China", "Japan", "South Korea"]
-    
-    
-    
-    
     var player: AVAudioPlayer?
     let defaults = UserDefaults.standard
     var buttonClicked = false
@@ -130,6 +118,7 @@ class GameViewController: UIViewController {
     
     // Add this button to the pop up that appears when the player loses
     @IBAction func tryAgainButtonClicked(_ sender: UIButton) {
+        trys = 1
         resetScreen()
     }
     
@@ -222,6 +211,7 @@ class GameViewController: UIViewController {
             
         }
         else {
+            playSound(sound: K.Audio.gameWonSound)  // PLays winning sound.
             points += 4
             TotalPoints += 4
             view.backgroundColor = UIColor(red: 79/255, green: 178/255, blue: 105/255, alpha: 1) // Changes the background colour to green, when the player spells the word correctly.
@@ -254,7 +244,7 @@ class GameViewController: UIViewController {
         MusicPlayer.sharedHelper.playSound(soundURL: sound)
     }
     
-    
+    //
     func playWord(play: String) {
         MusicPlayer.sharedHelper.playWord(playURL: play)
     }
@@ -349,37 +339,6 @@ class GameViewController: UIViewController {
             playWord(play: K.VoiceOver.w26) ///
         }
     }
-    
-    
-  // this is for adding the the voice overs to an array, add to spellman.  Find a way to link the voiceOverArray to wordArray so that when (w1) is chosen, (v1) is chosen simultaneously.
-  /*
-    func voiceOver() {
-        let v1 = AVAudioplayer?(named: "word") ...
-        
-        let voiceOverArray = [v1, ...]
-    }*/
-    
-    
-    
-    
-
-    // then add them all to the "groups" array
-/*    func addArrays() {
-        groups.append(groupA)
-        groups.append(groupB)
-        groups.append(groupC)
-    }
-
-    // this will print out the array of arays
-    print("The groups are:", groups)
-
-    // we now append an item to one of the arrays
-    groups[1].append("Costa Rica")
-    print("\nAfter adding Costa Rica, the groups are:", groups)
-
-    // and now print out groupB's contents again
-    print("\nGroup B still contains:", groupB)
-    */
     
     /*
     // MARK: - Navigation
