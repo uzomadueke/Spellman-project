@@ -184,31 +184,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-Jo-nPW">
-                                <rect key="frame" x="96" y="127" width="222.5" height="48.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPJ-Jv-IaN" userLabel="Points Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssp-2B-l8R">
-                                        <rect key="frame" x="92.5" y="0.0" width="23" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="40"/>
-                                        <color key="textColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Try Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-pw-4RM" userLabel="Trys Label">
-                                        <rect key="frame" x="137.5" y="0.0" width="85" height="48.5"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsq-Rf-1xX">
-                                <rect key="frame" x="121" y="370.5" width="123" height="33.5"/>
+                                <rect key="frame" x="122" y="320" width="123" height="33.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="PLAY WORD" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
@@ -218,86 +195,118 @@
                                     <action selector="playWordClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="57u-p6-EST"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-CR-wEl" userLabel="Spell">
-                                <rect key="frame" x="119.5" y="433" width="175.5" height="33.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="          SPELL           " cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
-                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="spellButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="mI2-7H-LmS"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VolumeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-tQ-BD9">
-                                <rect key="frame" x="252" y="370" width="40.5" height="34"/>
+                                <rect key="frame" x="253" y="320" width="40.5" height="34"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_ _ _ _ _ _ _ _ _ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWl-MQ-YMp" userLabel="Hidden Word label">
-                                <rect key="frame" x="44" y="245" width="326" height="52"/>
+                                <rect key="frame" x="44" y="230" width="326" height="52"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BpY-Nn-lmS" userLabel="Guessing Text Field">
-                                <rect key="frame" x="189.5" y="517.5" width="35" height="35.5"/>
+                                <rect key="frame" x="189.5" y="169" width="35" height="35.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-g2-LTv" userLabel="Try Again">
-                                <rect key="frame" x="109.5" y="603" width="195" height="36.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="       TRY AGAIN     " cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="tryAgainButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="RWK-ku-fE9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jC-oN-xP0" userLabel="Next Word">
-                                <rect key="frame" x="109" y="665" width="196" height="36.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="      NEXT WORD    " cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="nextWordButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="bNI-O1-5GT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkX-bN-CUH" userLabel="Exit Game">
-                                <rect key="frame" x="107.5" y="722" width="199" height="36.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="       EXIT GAME      " cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="exitButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="2Bn-0B-doj"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="IRV-Jo-nPW">
+                                <rect key="frame" x="89.5" y="98" width="235" height="48.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Points  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPJ-Jv-IaN" userLabel="Points Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="48.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" |" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssp-2B-l8R">
+                                        <rect key="frame" x="101" y="0.0" width="31" height="48.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="40"/>
+                                        <color key="textColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Try Left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-pw-4RM" userLabel="Trys Label">
+                                        <rect key="frame" x="150" y="0.0" width="85" height="48.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="PCb-pv-tou">
+                                <rect key="frame" x="44" y="386" width="326" height="101"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Kly-a3-lXv">
+                                        <rect key="frame" x="0.0" y="0.0" width="158.5" height="101"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-CR-wEl" userLabel="Spell">
+                                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="SPELL" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="spellButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="mI2-7H-LmS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgw-g2-LTv" userLabel="Try Again">
+                                                <rect key="frame" x="0.0" y="61" width="158.5" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="TRY AGAIN" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tryAgainButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="RWK-ku-fE9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Ilc-hh-fKl">
+                                        <rect key="frame" x="167.5" y="0.0" width="158.5" height="101"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jC-oN-xP0" userLabel="Next Word">
+                                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="NEXT WORD" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="nextWordButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="bNI-O1-5GT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkX-bN-CUH" userLabel="Exit Game">
+                                                <rect key="frame" x="0.0" y="61" width="158.5" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="EXIT GAME" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <color key="baseBackgroundColor" red="0.33311074969999999" green="0.3331620991" blue="0.33309453729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="exitButtonClicked:" destination="hMH-Fu-ewU" eventType="touchUpInside" id="2Bn-0B-doj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gv4-Pa-uzJ"/>
                         <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pWl-MQ-YMp" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="2uX-4I-n0E"/>
-                            <constraint firstItem="Bgw-g2-LTv" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="200" id="3F1-GZ-IgF"/>
-                            <constraint firstItem="fkX-bN-CUH" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="4OM-O6-DaL"/>
-                            <constraint firstItem="BpY-Nn-lmS" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="8z8-fS-vk9"/>
-                            <constraint firstItem="BpY-Nn-lmS" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="114" id="AAV-Ln-pWi"/>
-                            <constraint firstItem="IRV-Jo-nPW" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="AtY-fv-umL"/>
-                            <constraint firstItem="Rsq-Rf-1xX" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" constant="-24.5" id="B7J-t4-gl7"/>
-                            <constraint firstItem="Bgw-g2-LTv" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="Oua-hd-Glb"/>
-                            <constraint firstItem="IRV-Jo-nPW" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-269.75" id="Qoc-0E-Qjs"/>
-                            <constraint firstItem="fkX-bN-CUH" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="319.25" id="Res-j9-AFd"/>
-                            <constraint firstItem="pWl-MQ-YMp" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-150" id="WG5-B2-wEW"/>
-                            <constraint firstItem="Rsq-Rf-1xX" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-34" id="Xdj-b1-QjM"/>
-                            <constraint firstItem="1jC-oN-xP0" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="cT8-Kj-Dq6"/>
-                            <constraint firstItem="qRd-CR-wEl" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="28.75" id="eUG-fZ-hz4"/>
-                            <constraint firstItem="qRd-CR-wEl" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="lvB-n5-tho"/>
-                            <constraint firstItem="uMx-tQ-BD9" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-34" id="q0V-LS-6Si"/>
-                            <constraint firstItem="1jC-oN-xP0" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="262" id="rbD-wA-VZc"/>
-                            <constraint firstItem="uMx-tQ-BD9" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" constant="65.25" id="xuh-di-uh1"/>
+                            <constraint firstItem="Rsq-Rf-1xX" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-84.25" id="8Tz-KX-gQy"/>
+                            <constraint firstItem="uMx-tQ-BD9" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-84" id="D95-bd-eCx"/>
+                            <constraint firstItem="PCb-pv-tou" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="Flw-YJ-G1A"/>
+                            <constraint firstItem="Rsq-Rf-1xX" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" constant="-23.5" id="JXb-Vb-Xax"/>
+                            <constraint firstItem="uMx-tQ-BD9" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" constant="66.25" id="LEA-kS-Wm8"/>
+                            <constraint firstItem="IRV-Jo-nPW" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-298.75" id="VKt-Tv-Xi0"/>
+                            <constraint firstItem="IRV-Jo-nPW" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="XSF-th-UMy"/>
+                            <constraint firstItem="pWl-MQ-YMp" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-165" id="Xdj-b9-7pp"/>
+                            <constraint firstItem="pWl-MQ-YMp" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="d5c-Oj-5xB"/>
+                            <constraint firstItem="PCb-pv-tou" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="15.5" id="fdI-T4-cax"/>
+                            <constraint firstItem="BpY-Nn-lmS" firstAttribute="centerY" secondItem="ciE-AL-Xmb" secondAttribute="centerY" constant="-234.25" id="p6I-Hh-rii"/>
+                            <constraint firstItem="BpY-Nn-lmS" firstAttribute="centerX" secondItem="ciE-AL-Xmb" secondAttribute="centerX" id="sLA-Us-2mu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SPELLMAN" id="cc5-e4-7a4"/>
@@ -452,7 +461,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ePS-Z0-8pd"/>
+        <segue reference="5JQ-1c-rQ5"/>
         <segue reference="PmQ-Iy-rUU"/>
     </inferredMetricsTieBreakers>
     <resources>
