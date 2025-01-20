@@ -2,7 +2,7 @@
 //  GameRules.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 01/05/2022.
+//  
 //
 
 import Foundation
@@ -24,7 +24,7 @@ struct rulesData {
         "You start with 1 life only.",
         "You gain 4 points for correctly spelling a word and loose 4 points for an incorrect letter.",
         "When you spell a word correctly, the screen turns green. Click 'Next Word' to continue and spell a diffferent word.",
-        "When you spell a word correctly, the screen turns red. Click 'Try Again' to spell the word again."
+        "When you spell a word incorrectly, the screen turns red. Click 'Try Again' to spell the word again."
     ]
 }
 

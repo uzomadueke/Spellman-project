@@ -2,7 +2,7 @@
 //  LeaderboardViewController.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 28/04/2022.
+// 
 //
 
 import UIKit

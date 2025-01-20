@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 27/04/2022.
+// 
 //
 
 import UIKit
@@ -52,7 +52,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the  line below if you want to play Background music
-       // MusicPlayer.sharedHelper.playBGMusic()
+        MusicPlayer.sharedHelper.playBGMusic()
         
         animateViewController()
     }

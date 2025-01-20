@@ -18,9 +18,6 @@
 		A078978B2819A10B00561AD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07897892819A10B00561AD8 /* Main.storyboard */; };
 		A078978D2819A10E00561AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A078978C2819A10E00561AD8 /* Assets.xcassets */; };
 		A07897902819A10E00561AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A078978E2819A10E00561AD8 /* LaunchScreen.storyboard */; };
-		A078979B2819A10E00561AD8 /* Spellman_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A078979A2819A10E00561AD8 /* Spellman_projectTests.swift */; };
-		A07897A52819A10E00561AD8 /* Spellman_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897A42819A10E00561AD8 /* Spellman_projectUITests.swift */; };
-		A07897A72819A10E00561AD8 /* Spellman_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897A62819A10E00561AD8 /* Spellman_projectUITestsLaunchTests.swift */; };
 		A07897B5281A0B9700561AD8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897B4281A0B9700561AD8 /* GameViewController.swift */; };
 		A07897B7281A1F5800561AD8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897B6281A1F5800561AD8 /* SettingsViewController.swift */; };
 		A07897B9281A1F9100561AD8 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */; };
@@ -91,10 +88,7 @@
 		A078978F2819A10E00561AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A07897912819A10E00561AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A07897962819A10E00561AD8 /* Spellman-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spellman-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A078979A2819A10E00561AD8 /* Spellman_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spellman_projectTests.swift; sourceTree = "<group>"; };
 		A07897A02819A10E00561AD8 /* Spellman-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spellman-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A07897A42819A10E00561AD8 /* Spellman_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spellman_projectUITests.swift; sourceTree = "<group>"; };
-		A07897A62819A10E00561AD8 /* Spellman_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spellman_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A07897B4281A0B9700561AD8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A07897B6281A1F5800561AD8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A07897B8281A1F9100561AD8 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
@@ -173,8 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				A07897822819A10A00561AD8 /* Spellman-project */,
-				A07897992819A10E00561AD8 /* Spellman-projectTests */,
-				A07897A32819A10E00561AD8 /* Spellman-projectUITests */,
 				A07897812819A10A00561AD8 /* Products */,
 				A067AEA3281BE40F009878CA /* Frameworks */,
 			);
@@ -204,23 +196,6 @@
 				A07897912819A10E00561AD8 /* Info.plist */,
 			);
 			path = "Spellman-project";
-			sourceTree = "<group>";
-		};
-		A07897992819A10E00561AD8 /* Spellman-projectTests */ = {
-			isa = PBXGroup;
-			children = (
-				A078979A2819A10E00561AD8 /* Spellman_projectTests.swift */,
-			);
-			path = "Spellman-projectTests";
-			sourceTree = "<group>";
-		};
-		A07897A32819A10E00561AD8 /* Spellman-projectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A07897A42819A10E00561AD8 /* Spellman_projectUITests.swift */,
-				A07897A62819A10E00561AD8 /* Spellman_projectUITestsLaunchTests.swift */,
-			);
-			path = "Spellman-projectUITests";
 			sourceTree = "<group>";
 		};
 		A07897BB281A25D700561AD8 /* Delegation */ = {
@@ -309,12 +284,12 @@
 		A0F539EE281B68F6003CD210 /* AudioFiles */ = {
 			isa = PBXGroup;
 			children = (
+				A0C35AB82821F5850094623A /* Voice-Overs */,
 				A0C35AB62821F49D0094623A /* backgroundmusic.mp3 */,
 				A0C35AB02821F4740094623A /* button-pressed.wav */,
 				A0C35AAC2821F4730094623A /* correct-answer.wav */,
 				A0C35AAF2821F4740094623A /* game-won.wav */,
 				A0C35AAD2821F4730094623A /* wrong-answer.wav */,
-				A0C35AB82821F5850094623A /* Voice-Overs */,
 			);
 			path = AudioFiles;
 			sourceTree = "<group>";
@@ -500,7 +475,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A078979B2819A10E00561AD8 /* Spellman_projectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,8 +482,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A07897A72819A10E00561AD8 /* Spellman_projectUITestsLaunchTests.swift in Sources */,
-				A07897A52819A10E00561AD8 /* Spellman_projectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

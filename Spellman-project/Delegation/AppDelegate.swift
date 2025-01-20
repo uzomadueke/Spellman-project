@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 27/04/2022.
+//  This following code is computer generated code !!!!!!!!!!!!!!!
 //
 
 import UIKit

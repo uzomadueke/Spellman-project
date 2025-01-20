@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 28/04/2022.
+// 
 //
 
 import UIKit
@@ -14,9 +14,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var soundFXController: UISwitch!
     @IBOutlet weak var musicTag: UILabel!
     @IBOutlet weak var musicController: UISwitch!
-    
-   
-    
     
     let defaults = UserDefaults.standard
     var soundFXOn = true
@@ -72,7 +69,7 @@ class SettingsViewController: UIViewController {
     
     
     // This controlls the soundFX switch
-    @IBAction func soundFXTag(_ sender: UISwitch){
+    @IBAction func soundFXController(_ sender: UISwitch){
         if sender.isOn == true {
             defaults.set(true, forKey: "SoundFX")
             playButtonSound()
@@ -84,7 +81,7 @@ class SettingsViewController: UIViewController {
     
     
     // this controlls the music switch
-    @IBAction func musicTag(_ sender: UISwitch){
+    @IBAction func musicController(_ sender: UISwitch){
         if sender.isOn == true {
             defaults.set(true, forKey: "Sound")
             MusicPlayer.sharedHelper.playBGMusic()

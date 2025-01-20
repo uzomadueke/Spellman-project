@@ -2,7 +2,7 @@
 //  GameViewController.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 28/04/2022.
+//  
 //
 
 import UIKit
@@ -27,6 +27,8 @@ class GameViewController: UIViewController {
     var buttonClicked = false
     
     var word = ""
+    // These are the words that are going to be spelled.
+    var wordLetterArray = ["APPLE", "BOOK", "CAT", "DOG", "ELEPHANT", "FISH", "GAZEBO", "HATFIELD", "INTERNATIONAL", "JUICE", "KID", "LOUNGE", "MONEY","NIGERIA", "OCTOBER", "PORTUGAL", "QUEEN", "ROAD", "SAUCE", "TIGER", "UMBRELLA", "VAN", "WATER", "XYLOPHONE", "YELLOW", "ZEBRA"]
     
     var hiddenWord = ""
     var hiddenWordArray = [Character]()
@@ -34,8 +36,8 @@ class GameViewController: UIViewController {
     var guess: Character!
     var usedLetters = [Character]()
     
-    var level = 0
-    var levelCompleted = false
+  //  var level = 0 //
+  //  var levelCompleted = false //
     
     //This is for keeping the players score
     var points = 0 {
@@ -83,7 +85,7 @@ class GameViewController: UIViewController {
             hiddenWordArray = Array(hiddenWord)
         }
         
-        TotalPoints = defaults.integer(forKey: K.scoreKey)
+        // TotalPoints = defaults.integer(forKey: K.scoreKey)
         pointsLabel.text = "\(points) points" //
         trysLabel.text = "\(trys) Try Left"
     }
@@ -92,8 +94,7 @@ class GameViewController: UIViewController {
     
     // This function processes the letter entered by the user, when the 'SPELL' button is clicked.
     @IBAction func spellButtonClicked(_ sender: UIButton) {
-        //Resign first responder textField
-        //guessingTextField.becomeFirstResponder()
+        guessingTextField.becomeFirstResponder() // This opens up the keyboard when the text field is clicked
         
         //Make sure the user has entered a letter but only one letter
         let guess1 = guessingTextField.text
@@ -133,31 +134,29 @@ class GameViewController: UIViewController {
     // This function clears the screen and selects a new word for the user to spell.
     @IBAction func nextWordButtonClicked(_ sender: UIButton) {
         view.backgroundColor = UIColor(red: 92/255, green: 157/255, blue: 232/255, alpha: 1) // changes background colour back to blue
-        level += 1
-        levelCompleted = true
+      //  level += 1
+      //+  levelCompleted = true
         
-        //Reset the variables, the labels, the images
+        // This resets the text field and the hiddenWords '?'
         guessingTextField.text = ""
         hiddenWord = ""
-        word = wordLetterArray.randomElement()!                                       // This will repeat the word for the user to spell it again.
+        word = wordLetterArray.randomElement()!            // This will randomise the selection of words for the user to spell.
         usedLetters = Array(word)
-        //points = 0
         
         for l in 1...word.count {
             hiddenWord += "?"
             hiddenWordLabel.text = hiddenWord
             hiddenWordArray = Array(hiddenWord)
         }
-        
     }
     
     
     
     @IBAction func exitButtonClicked(_ sender: UIButton) {
         points = 0
-        resetScreen()                                                                  // This resets the screen.
+        resetScreen()     // This resets the screen.
         
-        if !buttonClicked {                                                            // This triggers the the segue process and goes back to the home screen page.
+        if !buttonClicked {      // This triggers the the segue process and goes back to the home screen page.
             DispatchQueue.main.asyncAfter(deadline: .now()  + 0.6) {
                 [weak self] in
                 self?.performSegue(withIdentifier: K.homePageSegue, sender: self)
@@ -174,7 +173,7 @@ class GameViewController: UIViewController {
         if usedLetters.contains(guess){
             for i in 0...word.count - 1 {
                 
-                if guess == usedLetters[i] {  // try and find why it get a runtime error
+                if guess == usedLetters[i] {  // This checks if the letter entered in the 'guessTextField'
                     hiddenWordArray[i] = guess
                     Vibration.success.vibrate()
                     playSound(sound: K.Audio.correctAnswerSound) // plays 'correct answer sound' if the letter is correct
@@ -182,14 +181,10 @@ class GameViewController: UIViewController {
             }
         }
         else {
-            if trys == 0 {  // this does'nt allow to 'trys' go below zero.
-                trys = 0
+            if trys > 0 {
+                trys -= 1  // This Reduces the amount of trys left to spell the word
+                playSound(sound: K.Audio.wrongAnswerSound)  // plays 'wrong answer sound' if the letter is wrong
             }
-            else {
-                trys -= 1
-            }
-            
-            playSound(sound: K.Audio.wrongAnswerSound)  // plays 'wrong answer sound' if the letter is wrong
         }
     }
 
@@ -199,10 +194,7 @@ class GameViewController: UIViewController {
     func checkForWin() {
         
         if trys == 0 {
-            if points == 0 {  // this does'nt allow to 'points' go below zero.
-               // points = 0
-            }
-            else {
+            if points != 0 {  // this does'nt allow to 'points' go below zero.
                 points -= 4
             }
             view.backgroundColor = UIColor(red: 168/255, green: 4/255, blue: 14/255, alpha: 1) // Changes the background colour to red, when the user fails.
@@ -215,8 +207,6 @@ class GameViewController: UIViewController {
             points += 4
             TotalPoints += 4
             view.backgroundColor = UIColor(red: 79/255, green: 178/255, blue: 105/255, alpha: 1) // Changes the background colour to green, when the player spells the word correctly.
-            
-            
         }
     }
     
@@ -253,15 +243,14 @@ class GameViewController: UIViewController {
     
 //-------------------------------------------------------------------------------------------------------------
     
-    // These are the words that are going to be spelled.
-    var wordLetterArray = ["APPLE", "BOOK", "CAT", "DOG", "ELEPHANT", "FISH", "GAZEBO", "HATFIELD", "INTERNATIONAL", "JUICE", "KID", "LOUNGE", "MONEY",                          "NIGERIA", "OCTOBER", "PORTUGAL", "QUEEN", "ROAD", "SAUCE", "TIGER", "UMBRELLA", "VAN", "WATER", "XYLOPHONE", "YELLOW", "ZEBRA"]
+
     
     
     
     // This is a function that will play the 'VoiceOver' if its name is equal to (==) the word meant to be spelled.
     func wordVoiceOver() {
         if K.VoiceOver.w1 == word {
-            playWord(play: K.VoiceOver.w1) ///
+            playWord(play: K.VoiceOver.w1) // this calls the audio file name listed in the constants file
         }
         else if K.VoiceOver.w2 == word {
             playWord(play: K.VoiceOver.w2) ///

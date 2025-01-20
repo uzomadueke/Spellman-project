@@ -2,7 +2,7 @@
 //  MusicPlayer.swift
 //  Spellman-project
 //
-//  Created by Uzo Madueke on 29/04/2022.
+//  Some of the code on this page is not mine, and was gotten from another programmer.
 //
 
 import Foundation
@@ -28,10 +28,10 @@ class MusicPlayer {
         if musicOn {
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: bgMusicURL as URL)
-                audioPlayer?.numberOfLoops = -1
+                audioPlayer?.numberOfLoops = -1  // this creates an infinie loop for the music
                 audioPlayer?.prepareToPlay()
                 audioPlayer?.play()
-                audioPlayer?.volume = volume
+                audioPlayer?.volume = volume 
                 print("playing music")
             } catch {
                 print("Issue playing music file")
@@ -67,8 +67,9 @@ class MusicPlayer {
     }
     
     
+ // Below. This part of the code is mine, i used the knowledge from above to create it.
     
-    // This is for playing the sounds for particular buttons
+    // This is for playing the sounds for particular voiceovers
     func playWord(playURL: String) {
         
         let playURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: playURL, ofType: "wav")!)

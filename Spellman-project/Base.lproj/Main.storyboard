@@ -291,6 +291,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLICK THE WHITE BOX TO START SPELLING." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzA-zB-5Iv">
+                                <rect key="frame" x="49" y="631" width="316" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gv4-Pa-uzJ"/>
                         <color key="backgroundColor" red="0.35989952089999999" green="0.6149273515" blue="0.90822070840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -414,7 +421,7 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-qm-QJQ" userLabel="SoundFX Controller">
                                         <rect key="frame" x="242" y="0.0" width="51" height="31"/>
                                         <connections>
-                                            <action selector="soundFXTag:" destination="U28-DE-1ly" eventType="valueChanged" id="3fO-ne-kmf"/>
+                                            <action selector="soundFXController:" destination="U28-DE-1ly" eventType="valueChanged" id="IxE-7R-Tqv"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -432,7 +439,7 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wte-oV-IpE" userLabel="Music Controller">
                                         <rect key="frame" x="243.5" y="0.0" width="51" height="31"/>
                                         <connections>
-                                            <action selector="musicTag:" destination="U28-DE-1ly" eventType="valueChanged" id="TuV-Oi-wQP"/>
+                                            <action selector="musicController:" destination="U28-DE-1ly" eventType="valueChanged" id="vu3-ch-RVN"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -461,7 +468,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5JQ-1c-rQ5"/>
+        <segue reference="ePS-Z0-8pd"/>
         <segue reference="PmQ-Iy-rUU"/>
     </inferredMetricsTieBreakers>
     <resources>
